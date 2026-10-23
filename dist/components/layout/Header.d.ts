@@ -7,10 +7,15 @@ export interface HeaderNotification {
     read?: boolean;
 }
 export interface HeaderUser {
+    name?: string;
+    nombre?: string;
     username?: string;
     email?: string;
+    role?: string;
     rol?: string;
+    sede?: string;
     avatarUrl?: string;
+    [key: string]: any;
 }
 export interface HeaderProps {
     portalTitle?: string;

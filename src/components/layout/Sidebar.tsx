@@ -5,12 +5,23 @@ import * as Icons from 'lucide-react';
 import Tooltip from '@mui/material/Tooltip';
 import { MenuItem } from '../../types';
 
+export interface SidebarUser {
+  name?: string;
+  nombre?: string;
+  username?: string;
+  email?: string;
+  rol?: string;
+  role?: string;
+  avatarUrl?: string;
+  [key: string]: any;
+}
+
 export interface SidebarProps {
   menuItems: MenuItem[];
   currentPath?: string;
   onNavigate?: (path: string) => void;
   logoSrc?: string;
-  user?: { username?: string; email?: string };
+  user?: SidebarUser | null;
   onLogout?: () => void;
   LinkComponent?: React.ComponentType<{
     to: string;

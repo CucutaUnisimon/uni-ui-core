@@ -16,10 +16,15 @@ export interface HeaderNotification {
 }
 
 export interface HeaderUser {
+  name?: string;
+  nombre?: string;
   username?: string;
   email?: string;
+  role?: string;
   rol?: string;
+  sede?: string;
   avatarUrl?: string;
+  [key: string]: any;
 }
 
 export interface HeaderProps {
@@ -45,6 +50,8 @@ export const Header: React.FC<HeaderProps> = ({
   onMarkAllAsRead,
   rightActions,
 }) => {
+  const displayName = user?.nombre || user?.name || user?.username || 'Usuario';
+  const displayRole = user?.rol || user?.role || user?.sede || user?.email || 'Institucional';
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const [showNotifications, setShowNotifications] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -171,17 +178,17 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
                   {user?.avatarUrl ? (
-                    <img src={user.avatarUrl} alt={user.username || 'Usuario'} className="w-full h-full object-cover rounded-xl" />
+                    <img src={user.avatarUrl} alt={displayName} className="w-full h-full object-cover rounded-xl" />
                   ) : (
-                    user?.username ? user.username.charAt(0).toUpperCase() : <User size={18} />
+                    displayName ? displayName.charAt(0).toUpperCase() : <User size={18} />
                   )}
                 </div>
                 <div className="hidden md:block text-left">
                   <p className="text-sm font-bold text-gray-800 leading-tight">
-                    {user?.username || 'Usuario'}
+                    {displayName}
                   </p>
                   <p className="text-[11px] text-gray-400 font-medium">
-                    {user?.rol || user?.email || 'Institucional'}
+                    {displayRole}
                   </p>
                 </div>
                 <ChevronDown size={14} className="text-gray-400 hidden md:block" />
@@ -198,7 +205,7 @@ export const Header: React.FC<HeaderProps> = ({
                   >
                     <div className="px-4 py-2.5 border-b border-gray-100 bg-gray-50/50">
                       <p className="text-xs font-bold text-gray-900 truncate">
-                        {user?.username || 'Usuario'}
+                        {displayName}
                       </p>
                       {user?.email && (
                         <p className="text-[10px] text-gray-400 truncate mt-0.5">

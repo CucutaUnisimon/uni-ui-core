@@ -35,7 +35,8 @@ export default defineConfig({
         'lucide-react',
         'dayjs',
         'dayjs/plugin/customParseFormat',
-        'mui-tel-input'
+        'mui-tel-input',
+        'sweetalert2'
       ],
       output: {
         globals: {
