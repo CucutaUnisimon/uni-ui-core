@@ -15,4 +15,5 @@ interface FormAutocompleteProps<T> extends Omit<AutocompleteProps<T, false, fals
  * Sigue el mismo patrón de diseño que FormField y FormSelect.
  */
 declare const FormAutocomplete: <T>({ label, placeholder, error, helperText, icon, loading, required, fullWidth, ...props }: FormAutocompleteProps<T>) => React.JSX.Element;
+export { FormAutocomplete };
 export default FormAutocomplete;

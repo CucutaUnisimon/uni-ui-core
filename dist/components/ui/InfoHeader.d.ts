@@ -18,4 +18,5 @@ interface InfoHeaderProps {
  * Integrado 100% con las clases temáticas de Tailwind.
  */
 declare const InfoHeader: React.FC<InfoHeaderProps>;
+export { InfoHeader };
 export default InfoHeader;

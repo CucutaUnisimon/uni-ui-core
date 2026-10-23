@@ -86,4 +86,5 @@ const SelectionListItem: React.FC<SelectionListItemProps> = ({
     );
 };
 
+export { SelectionListItem };
 export default SelectionListItem;

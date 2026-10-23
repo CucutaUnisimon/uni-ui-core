@@ -11,4 +11,5 @@ interface FormSectionProps {
  * FormSection — Componente para agrupar campos en secciones con título, icono y estilo unificado.
  */
 declare const FormSection: React.FC<FormSectionProps>;
+export { FormSection };
 export default FormSection;

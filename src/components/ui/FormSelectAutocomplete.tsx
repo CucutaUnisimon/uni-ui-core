@@ -116,4 +116,5 @@ const FormSelectAutocomplete: React.FC<FormSelectAutocompleteProps> = ({
     );
 };
 
+export { FormSelectAutocomplete };
 export default FormSelectAutocomplete;

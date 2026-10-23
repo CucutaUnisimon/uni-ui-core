@@ -15,6 +15,7 @@ export interface FileUploadProps {
     maxSize?: number;
     error?: boolean;
     value?: string | null;
+    disabled?: boolean;
 }
 
 /**
@@ -32,6 +33,8 @@ export const FileUpload: React.FC<FileUploadProps> = ({
     maxSizeMB,
     maxSize = 5,
     error = false,
+    value,
+    disabled = false,
 }) => {
     const effectiveMaxSize = maxSizeMB || maxSize;
     const effectiveHelperText = helperText || recommendedText;

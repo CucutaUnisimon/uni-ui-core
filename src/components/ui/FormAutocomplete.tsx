@@ -63,4 +63,5 @@ const FormAutocomplete = <T,>({
     );
 };
 
+export { FormAutocomplete };
 export default FormAutocomplete;

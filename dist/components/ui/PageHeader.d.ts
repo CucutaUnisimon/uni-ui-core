@@ -9,4 +9,5 @@ interface PageHeaderProps {
     actionButton?: React.ReactNode;
 }
 declare const PageHeader: React.FC<PageHeaderProps>;
+export { PageHeader };
 export default PageHeader;

@@ -167,4 +167,5 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
   );
 };
 
+export { Modal };
 export default Modal;

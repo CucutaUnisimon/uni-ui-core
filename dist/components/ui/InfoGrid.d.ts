@@ -17,4 +17,5 @@ interface InfoGridProps {
     noDataIcon?: LucideIcon;
 }
 declare const InfoGrid: React.FC<InfoGridProps>;
+export { InfoGrid };
 export default InfoGrid;

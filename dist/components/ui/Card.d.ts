@@ -45,4 +45,5 @@ interface ModuleCardProps {
  * Variante de Card para módulos
  */
 export declare const ModuleCard: React.FC<ModuleCardProps>;
+export { Card };
 export default Card;

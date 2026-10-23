@@ -11,4 +11,5 @@ export interface FormPhoneProps extends Omit<MuiTelInputProps, 'onChange'> {
     defaultCountry?: MuiTelInputCountry;
 }
 declare const FormPhone: React.FC<FormPhoneProps>;
+export { FormPhone };
 export default FormPhone;

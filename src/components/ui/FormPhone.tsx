@@ -70,4 +70,5 @@ const FormPhone: React.FC<FormPhoneProps> = ({
     );
 };
 
+export { FormPhone };
 export default FormPhone;

@@ -108,4 +108,5 @@ const FormTags: React.FC<FormTagsProps> = ({
     );
 };
 
+export { FormTags };
 export default FormTags;

@@ -49,4 +49,5 @@ const FormSection: React.FC<FormSectionProps> = ({
     );
 };
 
+export { FormSection };
 export default FormSection;

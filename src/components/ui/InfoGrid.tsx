@@ -143,4 +143,5 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items, columns = 1, noDataMessage, 
     );
 };
 
+export { InfoGrid };
 export default InfoGrid;

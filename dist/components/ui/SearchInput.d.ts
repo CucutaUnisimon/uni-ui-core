@@ -12,4 +12,5 @@ interface SearchInputProps {
  * Componente SearchInput Reutilizable
  */
 declare const SearchInput: React.FC<SearchInputProps>;
+export { SearchInput };
 export default SearchInput;

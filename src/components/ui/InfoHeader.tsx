@@ -59,4 +59,5 @@ const InfoHeader: React.FC<InfoHeaderProps> = ({
     );
 };
 
+export { InfoHeader };
 export default InfoHeader;

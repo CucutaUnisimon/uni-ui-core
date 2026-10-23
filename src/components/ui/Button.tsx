@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { motion, HTMLMotionProps } from 'framer-motion';
 import { Loader2, LucideIcon } from 'lucide-react';
 
-interface ButtonProps extends HTMLMotionProps<'button'> {
+export interface ButtonProps extends HTMLMotionProps<'button'> {
   children: ReactNode;
   variant?: 'primary' | 'secondary' | 'danger' | 'success' | 'outline' | 'ghost' | 'link';
   size?: 'sm' | 'md' | 'lg';
@@ -96,4 +96,5 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
+export { Button };
 export default Button;

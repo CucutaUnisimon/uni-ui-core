@@ -12,6 +12,7 @@ export interface FileUploadProps {
     maxSize?: number;
     error?: boolean;
     value?: string | null;
+    disabled?: boolean;
 }
 /**
  * Componente FileUpload Reutilizable

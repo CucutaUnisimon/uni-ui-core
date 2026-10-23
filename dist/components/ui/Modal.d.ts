@@ -28,4 +28,5 @@ interface ConfirmModalProps {
  * Modal de confirmación
  */
 export declare const ConfirmModal: React.FC<ConfirmModalProps>;
+export { Modal };
 export default Modal;

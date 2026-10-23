@@ -87,4 +87,5 @@ const FormSelect: React.FC<FormSelectProps> = ({
     );
 };
 
+export { FormSelect };
 export default FormSelect;

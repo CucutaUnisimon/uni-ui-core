@@ -13,4 +13,5 @@ interface SelectionListItemProps {
  * Diseñado para ser altamente legible y estético.
  */
 declare const SelectionListItem: React.FC<SelectionListItemProps>;
+export { SelectionListItem };
 export default SelectionListItem;

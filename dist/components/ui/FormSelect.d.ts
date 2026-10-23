@@ -20,4 +20,5 @@ interface FormSelectProps {
  * Los estilos de hover y focus se manejan globalmente en muiTheme.ts via MuiOutlinedInput.
  */
 declare const FormSelect: React.FC<FormSelectProps>;
+export { FormSelect };
 export default FormSelect;

@@ -14,4 +14,5 @@ interface FormTagsProps {
  * FormTags — Componente para entrada de tags (etiquetas) usando Autocomplete de MUI.
  */
 declare const FormTags: React.FC<FormTagsProps>;
+export { FormTags };
 export default FormTags;

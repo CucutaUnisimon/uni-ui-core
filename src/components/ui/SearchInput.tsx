@@ -78,4 +78,5 @@ const SearchInput: React.FC<SearchInputProps> = ({
   );
 };
 
+export { SearchInput };
 export default SearchInput;

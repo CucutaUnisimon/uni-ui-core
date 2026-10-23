@@ -190,4 +190,5 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
   );
 };
 
+export { Card };
 export default Card;

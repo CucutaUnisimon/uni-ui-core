@@ -22,4 +22,5 @@ interface FormSelectAutocompleteProps {
  * Mantiene la estética de FormSelect pero permite filtrar opciones.
  */
 declare const FormSelectAutocomplete: React.FC<FormSelectAutocompleteProps>;
+export { FormSelectAutocomplete };
 export default FormSelectAutocomplete;
