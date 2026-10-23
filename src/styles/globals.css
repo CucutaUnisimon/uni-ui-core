@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  :root {
+    /* =========================================================================
+       🎨 CONSOLA DE CONTROL DEL TEMA (PLUG & PLAY)
+       Cambia los valores aquí y TODO el proyecto se actualizará automáticamente.
+       ========================================================================= */
+
+    /* 1. COLOR PRINCIPAL (Verde Institucional por Defecto) */
+    --primary-main: #09843B;
+
+    /* 2. COLOR SECUNDARIO (Para bordes suaves, cabeceras de tablas) */
+    --secondary-main: #64748b;
+
+    /* 3. RADIO DE BORDE (Curvatura de los elementos) */
+    --radius-base: 18px;
+    /* Afecta a botones, inputs, modales base */
+    --radius-modal: 12px;
+    /* Afecta a los modales grandes (FormModal) */
+
+    /* 4. SOMBRAS BASE */
+    --shadow-soft: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+    --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+
+    /* =========================================================================
+       ⚙️ SISTEMA INTERNO
+       Variables derivadas para consistencia en botones y estados.
+       ========================================================================= */
+    --primary-light: color-mix(in srgb, var(--primary-main) 80%, white);
+    --primary-dark: color-mix(in srgb, var(--primary-main) 80%, black);
+    --primary-50: color-mix(in srgb, var(--primary-main) 10%, white);
+    --primary-100: color-mix(in srgb, var(--primary-main) 20%, white);
+    --primary-contrast: #ffffff;
+
+    --secondary-light: #94a3b8;
+    --secondary-dark: #475569;
+    --secondary-50: #f8fafc;
+    --secondary-100: #f1f5f9;
+    --secondary-200: #e2e8f0;
+    --secondary-300: #cbd5e1;
+
+    /* Estados */
+    --success-main: #10b981;
+    --error-main: #ef4444;
+    --warning-main: #f59e0b;
+    --info-main: #3b82f6;
+
+    /* Radios Extendidos (Mapeados desde el base) */
+    --radius-sm: calc(var(--radius-base) * 0.5);
+    --radius-md: var(--radius-base);
+    --radius-lg: calc(var(--radius-base) * 1.25);
+    --radius-xl: calc(var(--radius-base) * 1.5);
+    --radius-2xl: var(--radius-modal);
+    --radius-3xl: calc(var(--radius-base) * 2);
+    --radius-full: 9999px;
+  }
+}
+
+@layer components {
+
+  /* Scrollbar personalizado */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  /* Scrollbar súper delgado y elegante */
+  .custom-scroll-thin::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .custom-scroll-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scroll-thin::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 9999px;
+  }
+
+  .custom-scroll-thin::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+  }
+
+  .custom-scroll-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #e2e8f0 transparent;
+  }
+
+  /* Animaciones personalizadas */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.3s ease-out;
+  }
+
+  /* Card con efecto hover */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Botón con efecto ripple */
+  .btn-ripple {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-ripple::after {
+    content: '';
+    @apply absolute top-1/2 left-1/2 w-0 h-0 rounded-full bg-white opacity-50;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .btn-ripple:active::after {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animaciones de carga */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para SweetAlert2 */
+.swal2-container {
+  z-index: 1500 !important;
+}
+
+.swal2-popup {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.swal2-confirm {
+  background-color: var(--primary-main) !important;
+  border-radius: var(--radius-base) !important;
+}
+
+.swal2-confirm:hover {
+  background-color: var(--primary-dark) !important;
+}
+
+.swal2-cancel {
+  background-color: var(--error-main) !important;
+  border-radius: var(--radius-base) !important;
+}
+
+.swal2-cancel:hover {
+  border-radius: var(--radius-base) !important;
+}
