@@ -9,7 +9,7 @@ Librería centralizada de componentes, tokens de diseño y temas visuales para l
 Como cada proyecto es un repositorio independiente, se instala directamente desde la URL del repositorio Git institucional:
 
 ```bash
-npm install git+https://<TU-SERVIDOR-GIT>/uni-ui-core.git#v1.0.0
+npm install git+https://github.com/CucutaUnisimon/uni-ui-core.git#v1.0.0
 ```
 
 > **Tip:** Al actualizar la librería, solo debes cambiar la etiqueta (ej. `#v1.0.1`) en el `package.json` y ejecutar `npm install`.

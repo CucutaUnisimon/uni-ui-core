@@ -2,6 +2,10 @@
   "name": "@unisimon/ui",
   "version": "1.0.0",
   "description": "Sistema de diseño y componentes UI institucionales de la Universidad Simón Bolívar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CucutaUnisimon/uni-ui-core.git"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
