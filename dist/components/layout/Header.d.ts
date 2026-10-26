@@ -34,6 +34,7 @@ export interface HeaderProps {
     onMarkAllAsRead?: () => void;
     onViewAllNotifications?: () => void;
     rightActions?: React.ReactNode;
+    showNameInHeader?: boolean;
 }
 /**
  * Componente Header Institucional

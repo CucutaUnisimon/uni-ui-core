@@ -46,6 +46,7 @@ export interface HeaderProps {
   onMarkAllAsRead?: () => void;
   onViewAllNotifications?: () => void;
   rightActions?: React.ReactNode;
+  showNameInHeader?: boolean;
 }
 
 const defaultNotifications: HeaderNotification[] = [
@@ -89,6 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
   onMarkAllAsRead,
   onViewAllNotifications,
   rightActions,
+  showNameInHeader = false,
 }) => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const [showNotifications, setShowNotifications] = useState<boolean>(false);
@@ -251,14 +253,16 @@ export const Header: React.FC<HeaderProps> = ({
                   alt={fullName}
                   className="w-10 h-10 rounded-3xl border-2 border-primary object-cover"
                 />
-                <div className="hidden md:block text-left">
-                  <p className="text-sm font-semibold text-gray-900 leading-snug">
-                    {fullName}
-                  </p>
-                  <div className="flex items-center space-x-1 text-xs text-gray-500">
-                    <span>{user?.sede ? `Sede ${user.sede}` : ''}</span>
+                {showNameInHeader && (
+                  <div className="hidden md:block text-left">
+                    <p className="text-sm font-semibold text-gray-900 leading-snug">
+                      {fullName}
+                    </p>
+                    <div className="flex items-center space-x-1 text-xs text-gray-500">
+                      <span>{user?.sede ? `Sede ${user.sede}` : ''}</span>
+                    </div>
                   </div>
-                </div>
+                )}
                 <ChevronDown
                   size={16}
                   className={`text-gray-600 transition-transform ${

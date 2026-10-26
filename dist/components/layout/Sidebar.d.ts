@@ -8,6 +8,7 @@ export interface SidebarUser {
     rol?: string;
     role?: string;
     avatarUrl?: string;
+    foto?: string;
     [key: string]: any;
 }
 export interface SidebarProps {

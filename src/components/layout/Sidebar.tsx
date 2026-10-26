@@ -13,6 +13,7 @@ export interface SidebarUser {
   rol?: string;
   role?: string;
   avatarUrl?: string;
+  foto?: string;
   [key: string]: any;
 }
 
@@ -341,24 +342,70 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </nav>
 
         {/* Footer del Sidebar */}
-        {user && !isCollapsed && (
-          <div className="p-4 border-t border-gray-100 bg-gray-50/50 flex items-center justify-between">
-            <div className="flex items-center space-x-2.5 overflow-hidden">
-              <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs shrink-0">
-                {user.username?.charAt(0).toUpperCase() || 'U'}
+        {user && (
+          <div className="p-4 border-t border-gray-100 bg-gray-50/50">
+            {isCollapsed ? (
+              <div className="flex flex-col items-center space-y-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+                  {user?.foto ? (
+                    <img src={user.foto} alt="Avatar" className="w-full h-full object-cover" />
+                  ) : (
+                    <span className="text-primary font-bold">
+                      {(user?.nombre?.[0] || user?.username?.[0] || user?.name?.[0] || 'U').toUpperCase()}
+                    </span>
+                  )}
+                </div>
+                {onLogout && (
+                  <Tooltip title="Cerrar Sesión" arrow placement="top">
+                    <span>
+                      <button
+                        type="button"
+                        onClick={onLogout}
+                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer"
+                        title="Cerrar Sesión"
+                      >
+                        <Icons.LogOut size={20} />
+                      </button>
+                    </span>
+                  </Tooltip>
+                )}
               </div>
-              <p className="text-xs font-bold text-gray-700 truncate">
-                {user.username}
-              </p>
-            </div>
-            {onLogout && (
-              <button
-                onClick={onLogout}
-                className="text-gray-400 hover:text-red-500 p-1.5 rounded-lg hover:bg-white transition-colors cursor-pointer"
-                title="Cerrar sesión"
-              >
-                <Icons.LogOut size={16} />
-              </button>
+            ) : (
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-3 overflow-hidden">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden shadow-sm">
+                    {user?.foto ? (
+                      <img src={user.foto} alt="Avatar" className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="text-primary font-bold text-lg">
+                        {(user?.nombre?.[0] || user?.username?.[0] || user?.name?.[0] || 'U').toUpperCase()}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-sm font-bold text-gray-700 truncate capitalize">
+                      {user?.nombre?.split(' ')[0] || user?.name?.split(' ')[0] || user?.username || 'Usuario'}
+                    </span>
+                    <span className="text-[10px] font-medium text-gray-400 truncate">
+                      {user?.email || ''}
+                    </span>
+                  </div>
+                </div>
+                {onLogout && (
+                  <Tooltip title="Cerrar Sesión" arrow placement="top">
+                    <span>
+                      <button
+                        type="button"
+                        onClick={onLogout}
+                        className="flex-shrink-0 p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 cursor-pointer"
+                        title="Cerrar Sesión"
+                      >
+                        <Icons.LogOut size={22} className="opacity-70 group-hover:opacity-100" />
+                      </button>
+                    </span>
+                  </Tooltip>
+                )}
+              </div>
             )}
           </div>
         )}
