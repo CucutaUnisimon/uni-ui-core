@@ -7579,9 +7579,7 @@ const nc = ({ value: e }) => {
   onViewAllNotifications: A,
   rightActions: h
 }) => {
-  const [m, g] = oe(!1), [y, f] = oe(!1), v = at(null), O = at(null), Q = s !== void 0 ? s : a.filter((b) => !b.read).length, H = r != null && r.nombre && (r != null && r.apellido) ? `${r.nombre} ${r.apellido}` : (r == null ? void 0 : r.nombre) || (r == null ? void 0 : r.name) || (r == null ? void 0 : r.username) || "Unisimon Bolivar", E = (r == null ? void 0 : r.foto) || (r == null ? void 0 : r.avatarUrl) || `https://ui-avatars.com/api/?name=${encodeURIComponent(
-    H
-  )}&background=076930&color=fff&size=128`;
+  const [m, g] = oe(!1), [y, f] = oe(!1), v = at(null), O = at(null), Q = s !== void 0 ? s : a.filter((b) => !b.read).length, H = r != null && r.nombre && (r != null && r.apellido) ? `${r.nombre} ${r.apellido}` : (r == null ? void 0 : r.nombre) || (r == null ? void 0 : r.name) || (r == null ? void 0 : r.username) || (r == null ? void 0 : r.email) || "Unisimon Bolivar", E = (r == null ? void 0 : r.foto) || (r == null ? void 0 : r.avatarUrl) || "https://ui-avatars.com/api/?name=Unisimon+Bolivar&background=076930&color=fff&size=128";
   return Le(() => {
     const b = (D) => {
       const P = D.target;
@@ -7639,7 +7637,7 @@ const nc = ({ value: e }) => {
                 "div",
                 {
                   onClick: () => c && c(b),
-                  className: `p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer ${b.read ? "" : "bg-blue-50/60"}`,
+                  className: `p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer ${b.read ? "" : "bg-blue-50"}`,
                   children: [
                     /* @__PURE__ */ d("p", { className: "font-medium text-sm text-gray-900", children: b.title }),
                     /* @__PURE__ */ d("p", { className: "text-xs text-gray-600 mt-1", children: b.message }),
@@ -7679,7 +7677,7 @@ const nc = ({ value: e }) => {
               ),
               /* @__PURE__ */ p("div", { className: "hidden md:block text-left", children: [
                 /* @__PURE__ */ d("p", { className: "text-sm font-semibold text-gray-900 leading-snug", children: H }),
-                /* @__PURE__ */ d("div", { className: "flex items-center space-x-1 text-xs text-gray-500", children: /* @__PURE__ */ d("span", { children: (r == null ? void 0 : r.sede) || (r == null ? void 0 : r.rol) || (r == null ? void 0 : r.role) || "" }) })
+                /* @__PURE__ */ d("div", { className: "flex items-center space-x-1 text-xs text-gray-500", children: /* @__PURE__ */ d("span", { children: r != null && r.sede ? `Sede ${r.sede}` : "" }) })
               ] }),
               /* @__PURE__ */ d(
                 Mo,
@@ -7718,7 +7716,7 @@ const nc = ({ value: e }) => {
                         children: H
                       }
                     ),
-                    (r == null ? void 0 : r.email) && /* @__PURE__ */ d(
+                    (r == null ? void 0 : r.email) && (r == null ? void 0 : r.email) !== H && /* @__PURE__ */ d(
                       "p",
                       {
                         className: "text-sm text-gray-500 truncate",
@@ -7726,16 +7724,13 @@ const nc = ({ value: e }) => {
                         children: r.email
                       }
                     ),
-                    ((r == null ? void 0 : r.sede) || (r == null ? void 0 : r.rol) || (r == null ? void 0 : r.role)) && /* @__PURE__ */ p("div", { className: "flex items-center space-x-1 text-xs text-gray-500 mt-1", children: [
+                    /* @__PURE__ */ p("div", { className: "flex items-center space-x-1 text-xs text-gray-500 mt-1", children: [
                       /* @__PURE__ */ d(Ho, { size: 12 }),
-                      /* @__PURE__ */ p("span", { children: [
-                        "Sede ",
-                        (r == null ? void 0 : r.sede) || (r == null ? void 0 : r.rol) || (r == null ? void 0 : r.role)
-                      ] })
+                      /* @__PURE__ */ d("span", { children: r != null && r.sede ? `Sede ${r.sede}` : "Sede" })
                     ] })
                   ] })
                 ] }),
-                ((r == null ? void 0 : r.programa) || (r == null ? void 0 : r.codigo)) && /* @__PURE__ */ p("div", { className: "mt-3 p-2 bg-gray-50 rounded-lg", children: [
+                /* @__PURE__ */ p("div", { className: "mt-3 p-2 rounded-lg", children: [
                   (r == null ? void 0 : r.programa) && /* @__PURE__ */ d(
                     "p",
                     {

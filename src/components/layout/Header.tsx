@@ -103,14 +103,13 @@ export const Header: React.FC<HeaderProps> = ({
   const fullName =
     user?.nombre && user?.apellido
       ? `${user.nombre} ${user.apellido}`
-      : user?.nombre || user?.name || user?.username || 'Unisimon Bolivar';
+      : user?.nombre || user?.name || user?.username || user?.email || 'Unisimon Bolivar';
 
+  // Usar foto del usuario o fallback oficial de ui-avatars con 'UB'
   const avatarSrc =
     user?.foto ||
     user?.avatarUrl ||
-    `https://ui-avatars.com/api/?name=${encodeURIComponent(
-      fullName
-    )}&background=076930&color=fff&size=128`;
+    'https://ui-avatars.com/api/?name=Unisimon+Bolivar&background=076930&color=fff&size=128';
 
   // Cerrar dropdowns al hacer click fuera
   useEffect(() => {
@@ -207,7 +206,7 @@ export const Header: React.FC<HeaderProps> = ({
                               onNotificationClick && onNotificationClick(notification)
                             }
                             className={`p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer ${
-                              !notification.read ? 'bg-blue-50/60' : ''
+                              !notification.read ? 'bg-blue-50' : ''
                             }`}
                           >
                             <p className="font-medium text-sm text-gray-900">
@@ -257,7 +256,7 @@ export const Header: React.FC<HeaderProps> = ({
                     {fullName}
                   </p>
                   <div className="flex items-center space-x-1 text-xs text-gray-500">
-                    <span>{user?.sede || user?.rol || user?.role || ''}</span>
+                    <span>{user?.sede ? `Sede ${user.sede}` : ''}</span>
                   </div>
                 </div>
                 <ChevronDown
@@ -292,7 +291,7 @@ export const Header: React.FC<HeaderProps> = ({
                           >
                             {fullName}
                           </p>
-                          {user?.email && (
+                          {user?.email && user?.email !== fullName && (
                             <p
                               className="text-sm text-gray-500 truncate"
                               title={user.email}
@@ -300,30 +299,26 @@ export const Header: React.FC<HeaderProps> = ({
                               {user.email}
                             </p>
                           )}
-                          {(user?.sede || user?.rol || user?.role) && (
-                            <div className="flex items-center space-x-1 text-xs text-gray-500 mt-1">
-                              <MapPin size={12} />
-                              <span>Sede {user?.sede || user?.rol || user?.role}</span>
-                            </div>
-                          )}
+                          <div className="flex items-center space-x-1 text-xs text-gray-500 mt-1">
+                            <MapPin size={12} />
+                            <span>{user?.sede ? `Sede ${user.sede}` : 'Sede'}</span>
+                          </div>
                         </div>
                       </div>
 
-                      {(user?.programa || user?.codigo) && (
-                        <div className="mt-3 p-2 bg-gray-50 rounded-lg">
-                          {user?.programa && (
-                            <p
-                              className="text-xs text-primary font-medium truncate"
-                              title={user.programa}
-                            >
-                              {user.programa}
-                            </p>
-                          )}
-                          <p className="text-xs text-gray-600 mt-1">
-                            Código: {user?.codigo || 'N/A'}
+                      <div className="mt-3 p-2 rounded-lg">
+                        {user?.programa && (
+                          <p
+                            className="text-xs text-primary font-medium truncate"
+                            title={user.programa}
+                          >
+                            {user.programa}
                           </p>
-                        </div>
-                      )}
+                        )}
+                        <p className="text-xs text-gray-600 mt-1">
+                          Código: {user?.codigo || 'N/A'}
+                        </p>
+                      </div>
                     </div>
 
                     {/* Opciones del menú */}
