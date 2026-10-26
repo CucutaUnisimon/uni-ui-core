@@ -1,8 +1,8 @@
 import { createTheme as Eo } from "@mui/material/styles";
 import { esES as Do } from "@mui/x-data-grid/locales";
 import { jsxs as p, jsx as d, Fragment as De } from "react/jsx-runtime";
-import { motion as ue, AnimatePresence as qe } from "framer-motion";
-import * as we from "lucide-react";
+import { motion as ce, AnimatePresence as qe } from "framer-motion";
+import * as Ce from "lucide-react";
 import { Loader2 as No, X as Me, CheckCircle2 as Ar, XCircle as Io, Eye as er, ExternalLink as On, FileText as $e, Upload as Sn, AlertCircle as Qn, Move as Pr, GripHorizontal as Po, Minimize2 as Bo, Download as Mn, Image as Oo, Search as Hn, ShieldCheck as So, Bell as Qo, ChevronDown as Mo, MapPin as Ho, User as Ro, Settings as tr, LogOut as To, Code as Fo, ArrowLeft as Rn, Home as Tn, Lock as Br, ShieldAlert as ko } from "lucide-react";
 import { DataGrid as Yo, GridToolbarContainer as Lo } from "@mui/x-data-grid";
 import * as Se from "react";
@@ -189,7 +189,7 @@ const Fl = Eo({
       }
     }
   }
-}, Do), ve = ({
+}, Do), we = ({
   children: e,
   variant: t = "primary",
   size: r = "md",
@@ -227,7 +227,7 @@ const Fl = Eo({
     ${A}
   `, f = i || o;
   return /* @__PURE__ */ p(
-    ue.button,
+    ce.button,
     {
       type: u,
       onClick: c,
@@ -257,7 +257,7 @@ const Fl = Eo({
   padding: u = !0,
   ...A
 }) => /* @__PURE__ */ p(
-  ue.div,
+  ce.div,
   {
     className: `
         bg-white rounded-lg border border-gray-200 shadow-card
@@ -312,7 +312,7 @@ const Fl = Eo({
   favorite: i = !1,
   className: a = ""
 }) => /* @__PURE__ */ p(
-  ue.div,
+  ce.div,
   {
     onClick: o,
     className: `
@@ -381,8 +381,8 @@ function oi() {
   var e = typeof Symbol == "function" && Symbol.for, t = e ? Symbol.for("react.element") : 60103, r = e ? Symbol.for("react.portal") : 60106, n = e ? Symbol.for("react.fragment") : 60107, o = e ? Symbol.for("react.strict_mode") : 60108, i = e ? Symbol.for("react.profiler") : 60114, a = e ? Symbol.for("react.provider") : 60109, s = e ? Symbol.for("react.context") : 60110, c = e ? Symbol.for("react.async_mode") : 60111, u = e ? Symbol.for("react.concurrent_mode") : 60111, A = e ? Symbol.for("react.forward_ref") : 60112, h = e ? Symbol.for("react.suspense") : 60113, m = e ? Symbol.for("react.suspense_list") : 60120, g = e ? Symbol.for("react.memo") : 60115, y = e ? Symbol.for("react.lazy") : 60116, f = e ? Symbol.for("react.block") : 60121, v = e ? Symbol.for("react.fundamental") : 60117, O = e ? Symbol.for("react.responder") : 60118, Q = e ? Symbol.for("react.scope") : 60119;
   function H(b) {
     if (typeof b == "object" && b !== null) {
-      var D = b.$$typeof;
-      switch (D) {
+      var N = b.$$typeof;
+      switch (N) {
         case t:
           switch (b = b.type, b) {
             case c:
@@ -401,11 +401,11 @@ function oi() {
                 case a:
                   return b;
                 default:
-                  return D;
+                  return N;
               }
           }
         case r:
-          return D;
+          return N;
       }
     }
   }
@@ -489,7 +489,7 @@ function ii() {
         }
       }
     }
-    var b = c, D = u, P = s, k = a, R = t, L = A, T = n, l = y, I = g, w = r, N = i, M = o, J = h, le = !1;
+    var b = c, N = u, P = s, k = a, R = t, Y = A, T = n, l = y, I = g, w = r, D = i, M = o, J = h, le = !1;
     function Pe(S) {
       return le || (le = !0, console.warn("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.")), x(S) || E(S) === c;
     }
@@ -511,7 +511,7 @@ function ii() {
     function K(S) {
       return E(S) === n;
     }
-    function Y(S) {
+    function L(S) {
       return E(S) === y;
     }
     function U(S) {
@@ -529,7 +529,7 @@ function ii() {
     function fe(S) {
       return E(S) === h;
     }
-    $.AsyncMode = b, $.ConcurrentMode = D, $.ContextConsumer = P, $.ContextProvider = k, $.Element = R, $.ForwardRef = L, $.Fragment = T, $.Lazy = l, $.Memo = I, $.Portal = w, $.Profiler = N, $.StrictMode = M, $.Suspense = J, $.isAsyncMode = Pe, $.isConcurrentMode = x, $.isContextConsumer = B, $.isContextProvider = G, $.isElement = j, $.isForwardRef = F, $.isFragment = K, $.isLazy = Y, $.isMemo = U, $.isPortal = W, $.isProfiler = _, $.isStrictMode = V, $.isSuspense = fe, $.isValidElementType = H, $.typeOf = E;
+    $.AsyncMode = b, $.ConcurrentMode = N, $.ContextConsumer = P, $.ContextProvider = k, $.Element = R, $.ForwardRef = Y, $.Fragment = T, $.Lazy = l, $.Memo = I, $.Portal = w, $.Profiler = D, $.StrictMode = M, $.Suspense = J, $.isAsyncMode = Pe, $.isConcurrentMode = x, $.isContextConsumer = B, $.isContextProvider = G, $.isElement = j, $.isForwardRef = F, $.isFragment = K, $.isLazy = L, $.isMemo = U, $.isPortal = W, $.isProfiler = _, $.isStrictMode = V, $.isSuspense = fe, $.isValidElementType = H, $.typeOf = E;
   }()), $;
 }
 var Hr;
@@ -684,8 +684,8 @@ function si() {
       arrayOf: H,
       element: E(),
       elementType: b(),
-      instanceOf: D,
-      node: L(),
+      instanceOf: N,
+      node: Y(),
       objectOf: k,
       oneOf: P,
       oneOfType: R,
@@ -702,7 +702,7 @@ function si() {
     function v(x) {
       if (process.env.NODE_ENV !== "production")
         var B = {}, G = 0;
-      function j(K, Y, U, W, _, V, fe) {
+      function j(K, L, U, W, _, V, fe) {
         if (W = W || m, V = V || U, fe !== r) {
           if (c) {
             var S = new Error(
@@ -717,18 +717,18 @@ function si() {
             ), B[ye] = !0, G++);
           }
         }
-        return Y[U] == null ? K ? Y[U] === null ? new f("The " + _ + " `" + V + "` is marked as required " + ("in `" + W + "`, but its value is `null`.")) : new f("The " + _ + " `" + V + "` is marked as required in " + ("`" + W + "`, but its value is `undefined`.")) : null : x(Y, U, W, _, V);
+        return L[U] == null ? K ? L[U] === null ? new f("The " + _ + " `" + V + "` is marked as required " + ("in `" + W + "`, but its value is `null`.")) : new f("The " + _ + " `" + V + "` is marked as required in " + ("`" + W + "`, but its value is `undefined`.")) : null : x(L, U, W, _, V);
       }
       var F = j.bind(null, !1);
       return F.isRequired = j.bind(null, !0), F;
     }
     function O(x) {
-      function B(G, j, F, K, Y, U) {
+      function B(G, j, F, K, L, U) {
         var W = G[j], _ = M(W);
         if (_ !== x) {
           var V = J(W);
           return new f(
-            "Invalid " + K + " `" + Y + "` of type " + ("`" + V + "` supplied to `" + F + "`, expected ") + ("`" + x + "`."),
+            "Invalid " + K + " `" + L + "` of type " + ("`" + V + "` supplied to `" + F + "`, expected ") + ("`" + x + "`."),
             { expectedType: x }
           );
         }
@@ -740,16 +740,16 @@ function si() {
       return v(a);
     }
     function H(x) {
-      function B(G, j, F, K, Y) {
+      function B(G, j, F, K, L) {
         if (typeof x != "function")
-          return new f("Property `" + Y + "` of component `" + F + "` has invalid PropType notation inside arrayOf.");
+          return new f("Property `" + L + "` of component `" + F + "` has invalid PropType notation inside arrayOf.");
         var U = G[j];
         if (!Array.isArray(U)) {
           var W = M(U);
-          return new f("Invalid " + K + " `" + Y + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected an array."));
+          return new f("Invalid " + K + " `" + L + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected an array."));
         }
         for (var _ = 0; _ < U.length; _++) {
-          var V = x(U, _, F, K, Y + "[" + _ + "]", r);
+          var V = x(U, _, F, K, L + "[" + _ + "]", r);
           if (V instanceof Error)
             return V;
         }
@@ -759,9 +759,9 @@ function si() {
     }
     function E() {
       function x(B, G, j, F, K) {
-        var Y = B[G];
-        if (!s(Y)) {
-          var U = M(Y);
+        var L = B[G];
+        if (!s(L)) {
+          var U = M(L);
           return new f("Invalid " + F + " `" + K + "` of type " + ("`" + U + "` supplied to `" + j + "`, expected a single ReactElement."));
         }
         return null;
@@ -770,20 +770,20 @@ function si() {
     }
     function b() {
       function x(B, G, j, F, K) {
-        var Y = B[G];
-        if (!e.isValidElementType(Y)) {
-          var U = M(Y);
+        var L = B[G];
+        if (!e.isValidElementType(L)) {
+          var U = M(L);
           return new f("Invalid " + F + " `" + K + "` of type " + ("`" + U + "` supplied to `" + j + "`, expected a single ReactElement type."));
         }
         return null;
       }
       return v(x);
     }
-    function D(x) {
-      function B(G, j, F, K, Y) {
+    function N(x) {
+      function B(G, j, F, K, L) {
         if (!(G[j] instanceof x)) {
           var U = x.name || m, W = Pe(G[j]);
-          return new f("Invalid " + K + " `" + Y + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected ") + ("instance of `" + U + "`."));
+          return new f("Invalid " + K + " `" + L + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected ") + ("instance of `" + U + "`."));
         }
         return null;
       }
@@ -794,7 +794,7 @@ function si() {
         return process.env.NODE_ENV !== "production" && (arguments.length > 1 ? i(
           "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
         ) : i("Invalid argument supplied to oneOf, expected an array.")), a;
-      function B(G, j, F, K, Y) {
+      function B(G, j, F, K, L) {
         for (var U = G[j], W = 0; W < x.length; W++)
           if (y(U, x[W]))
             return null;
@@ -802,20 +802,20 @@ function si() {
           var ye = J(S);
           return ye === "symbol" ? String(S) : S;
         });
-        return new f("Invalid " + K + " `" + Y + "` of value `" + String(U) + "` " + ("supplied to `" + F + "`, expected one of " + _ + "."));
+        return new f("Invalid " + K + " `" + L + "` of value `" + String(U) + "` " + ("supplied to `" + F + "`, expected one of " + _ + "."));
       }
       return v(B);
     }
     function k(x) {
-      function B(G, j, F, K, Y) {
+      function B(G, j, F, K, L) {
         if (typeof x != "function")
-          return new f("Property `" + Y + "` of component `" + F + "` has invalid PropType notation inside objectOf.");
+          return new f("Property `" + L + "` of component `" + F + "` has invalid PropType notation inside objectOf.");
         var U = G[j], W = M(U);
         if (W !== "object")
-          return new f("Invalid " + K + " `" + Y + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected an object."));
+          return new f("Invalid " + K + " `" + L + "` of type " + ("`" + W + "` supplied to `" + F + "`, expected an object."));
         for (var _ in U)
           if (n(U, _)) {
-            var V = x(U, _, F, K, Y + "." + _, r);
+            var V = x(U, _, F, K, L + "." + _, r);
             if (V instanceof Error)
               return V;
           }
@@ -833,19 +833,19 @@ function si() {
             "Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + le(G) + " at index " + B + "."
           ), a;
       }
-      function j(F, K, Y, U, W) {
+      function j(F, K, L, U, W) {
         for (var _ = [], V = 0; V < x.length; V++) {
-          var fe = x[V], S = fe(F, K, Y, U, W, r);
+          var fe = x[V], S = fe(F, K, L, U, W, r);
           if (S == null)
             return null;
           S.data && n(S.data, "expectedType") && _.push(S.data.expectedType);
         }
         var ye = _.length > 0 ? ", expected one of type [" + _.join(", ") + "]" : "";
-        return new f("Invalid " + U + " `" + W + "` supplied to " + ("`" + Y + "`" + ye + "."));
+        return new f("Invalid " + U + " `" + W + "` supplied to " + ("`" + L + "`" + ye + "."));
       }
       return v(j);
     }
-    function L() {
+    function Y() {
       function x(B, G, j, F, K) {
         return w(B[G]) ? null : new f("Invalid " + F + " `" + K + "` supplied to " + ("`" + j + "`, expected a ReactNode."));
       }
@@ -857,15 +857,15 @@ function si() {
       );
     }
     function l(x) {
-      function B(G, j, F, K, Y) {
+      function B(G, j, F, K, L) {
         var U = G[j], W = M(U);
         if (W !== "object")
-          return new f("Invalid " + K + " `" + Y + "` of type `" + W + "` " + ("supplied to `" + F + "`, expected `object`."));
+          return new f("Invalid " + K + " `" + L + "` of type `" + W + "` " + ("supplied to `" + F + "`, expected `object`."));
         for (var _ in x) {
           var V = x[_];
           if (typeof V != "function")
-            return T(F, K, Y, _, J(V));
-          var fe = V(U, _, F, K, Y + "." + _, r);
+            return T(F, K, L, _, J(V));
+          var fe = V(U, _, F, K, L + "." + _, r);
           if (fe)
             return fe;
         }
@@ -874,21 +874,21 @@ function si() {
       return v(B);
     }
     function I(x) {
-      function B(G, j, F, K, Y) {
+      function B(G, j, F, K, L) {
         var U = G[j], W = M(U);
         if (W !== "object")
-          return new f("Invalid " + K + " `" + Y + "` of type `" + W + "` " + ("supplied to `" + F + "`, expected `object`."));
+          return new f("Invalid " + K + " `" + L + "` of type `" + W + "` " + ("supplied to `" + F + "`, expected `object`."));
         var _ = t({}, G[j], x);
         for (var V in _) {
           var fe = x[V];
           if (n(x, V) && typeof fe != "function")
-            return T(F, K, Y, V, J(fe));
+            return T(F, K, L, V, J(fe));
           if (!fe)
             return new f(
-              "Invalid " + K + " `" + Y + "` key `" + V + "` supplied to `" + F + "`.\nBad object: " + JSON.stringify(G[j], null, "  ") + `
+              "Invalid " + K + " `" + L + "` key `" + V + "` supplied to `" + F + "`.\nBad object: " + JSON.stringify(G[j], null, "  ") + `
 Valid keys: ` + JSON.stringify(Object.keys(x), null, "  ")
             );
-          var S = fe(U, V, F, K, Y + "." + V, r);
+          var S = fe(U, V, F, K, L + "." + V, r);
           if (S)
             return S;
         }
@@ -929,12 +929,12 @@ Valid keys: ` + JSON.stringify(Object.keys(x), null, "  ")
           return !1;
       }
     }
-    function N(x, B) {
+    function D(x, B) {
       return x === "symbol" ? !0 : B ? B["@@toStringTag"] === "Symbol" || typeof Symbol == "function" && B instanceof Symbol : !1;
     }
     function M(x) {
       var B = typeof x;
-      return Array.isArray(x) ? "array" : x instanceof RegExp ? "object" : N(B, x) ? "symbol" : B;
+      return Array.isArray(x) ? "array" : x instanceof RegExp ? "object" : D(B, x) ? "symbol" : B;
     }
     function J(x) {
       if (typeof x > "u" || x === null)
@@ -2436,7 +2436,7 @@ function Na(e = {}) {
     Da(s, t, r);
   }
   return (s, c = {}) => {
-    ha(s, (D) => D.filter((P) => P !== _e));
+    ha(s, (N) => N.filter((P) => P !== _e));
     const {
       name: u,
       slot: A,
@@ -2457,41 +2457,41 @@ function Na(e = {}) {
       shouldForwardProp: Q,
       label: Pa(u, A),
       ...y
-    }), E = (D) => {
-      if (D.__emotion_real === D)
-        return D;
-      if (typeof D == "function")
+    }), E = (N) => {
+      if (N.__emotion_real === N)
+        return N;
+      if (typeof N == "function")
         return function(k) {
-          return vt(k, D, k.theme.modularCssLayers ? f : void 0);
+          return vt(k, N, k.theme.modularCssLayers ? f : void 0);
         };
-      if (Ee(D)) {
-        const P = ro(D);
+      if (Ee(N)) {
+        const P = ro(N);
         return function(R) {
           return P.variants ? vt(R, P, R.theme.modularCssLayers ? f : void 0) : R.theme.modularCssLayers ? Fe(P.style, f) : P.style;
         };
       }
-      return D;
-    }, b = (...D) => {
-      const P = [], k = D.map(E), R = [];
+      return N;
+    }, b = (...N) => {
+      const P = [], k = N.map(E), R = [];
       if (P.push(i), u && g && R.push(function(I) {
         var J, le;
-        const N = (le = (J = I.theme.components) == null ? void 0 : J[u]) == null ? void 0 : le.styleOverrides;
-        if (!N)
+        const D = (le = (J = I.theme.components) == null ? void 0 : J[u]) == null ? void 0 : le.styleOverrides;
+        if (!D)
           return null;
         const M = {};
-        for (const Pe in N)
-          M[Pe] = vt(I, N[Pe], I.theme.modularCssLayers ? "theme" : void 0);
+        for (const Pe in D)
+          M[Pe] = vt(I, D[Pe], I.theme.modularCssLayers ? "theme" : void 0);
         return g(I, M);
       }), u && !v && R.push(function(I) {
         var M, J;
-        const w = I.theme, N = (J = (M = w == null ? void 0 : w.components) == null ? void 0 : M[u]) == null ? void 0 : J.variants;
-        return N ? no(I, N, [], I.theme.modularCssLayers ? "theme" : void 0) : null;
+        const w = I.theme, D = (J = (M = w == null ? void 0 : w.components) == null ? void 0 : M[u]) == null ? void 0 : J.variants;
+        return D ? no(I, D, [], I.theme.modularCssLayers ? "theme" : void 0) : null;
       }), O || R.push(_e), Array.isArray(k[0])) {
         const l = k.shift(), I = new Array(P.length).fill(""), w = new Array(R.length).fill("");
-        let N;
-        N = [...I, ...l, ...w], N.raw = [...I, ...l.raw, ...w], P.unshift(N);
+        let D;
+        D = [...I, ...l, ...w], D.raw = [...I, ...l.raw, ...w], P.unshift(D);
       }
-      const L = [...P, ...k, ...R], T = H(...L);
+      const Y = [...P, ...k, ...R], T = H(...Y);
       return s.muiName && (T.muiName = s.muiName), process.env.NODE_ENV !== "production" && (T.displayName = Ia(u, A, s)), T;
     };
     return H.withConfig && (b.withConfig = H.withConfig), b;
@@ -2785,37 +2785,37 @@ function ja(e, t = {}) {
   } = a;
   if (Object.entries(v || {}).forEach(([E, b]) => {
     const {
-      vars: D,
+      vars: N,
       css: P,
       varsWithDefaults: k
     } = Zt(b, t);
     g = ge(g, k), y[E] = {
       css: P,
-      vars: D
+      vars: N
     };
   }), f) {
     const {
       css: E,
       vars: b,
-      varsWithDefaults: D
+      varsWithDefaults: N
     } = Zt(f, t);
-    g = ge(g, D), y[c] = {
+    g = ge(g, N), y[c] = {
       css: E,
       vars: b
     };
   }
   function O(E, b) {
     var P, k;
-    let D = o;
-    if (o === "class" && (D = ".%s"), o === "data" && (D = "[data-%s]"), o != null && o.startsWith("data-") && !o.includes("%s") && (D = `[${o}="%s"]`), E) {
-      if (D === "media")
+    let N = o;
+    if (o === "class" && (N = ".%s"), o === "data" && (N = "[data-%s]"), o != null && o.startsWith("data-") && !o.includes("%s") && (N = `[${o}="%s"]`), E) {
+      if (N === "media")
         return e.defaultColorScheme === E ? ":root" : {
           [`@media (prefers-color-scheme: ${((k = (P = a[E]) == null ? void 0 : P.palette) == null ? void 0 : k.mode) || E})`]: {
             ":root": b
           }
         };
-      if (D)
-        return e.defaultColorScheme === E ? `:root, ${D.replace("%s", String(E))}` : D.replace("%s", String(E));
+      if (N)
+        return e.defaultColorScheme === E ? `:root, ${N.replace("%s", String(E))}` : N.replace("%s", String(E));
     }
     return ":root";
   }
@@ -2832,16 +2832,16 @@ function ja(e, t = {}) {
       }), E;
     },
     generateStyleSheets: () => {
-      var R, L;
+      var R, Y;
       const E = [], b = e.defaultColorScheme || "light";
-      function D(T, l) {
+      function N(T, l) {
         Object.keys(l).length && E.push(typeof T == "string" ? {
           [T]: {
             ...l
           }
         } : T);
       }
-      D(r(void 0, {
+      N(r(void 0, {
         ...h
       }), h);
       const {
@@ -2851,27 +2851,27 @@ function ja(e, t = {}) {
       if (P) {
         const {
           css: T
-        } = P, l = (L = (R = a[b]) == null ? void 0 : R.palette) == null ? void 0 : L.mode, I = !n && l ? {
+        } = P, l = (Y = (R = a[b]) == null ? void 0 : R.palette) == null ? void 0 : Y.mode, I = !n && l ? {
           colorScheme: l,
           ...T
         } : {
           ...T
         };
-        D(r(b, {
+        N(r(b, {
           ...I
         }), I);
       }
       return Object.entries(k).forEach(([T, {
         css: l
       }]) => {
-        var N, M;
-        const I = (M = (N = a[T]) == null ? void 0 : N.palette) == null ? void 0 : M.mode, w = !n && I ? {
+        var D, M;
+        const I = (M = (D = a[T]) == null ? void 0 : D.palette) == null ? void 0 : M.mode, w = !n && I ? {
           colorScheme: I,
           ...l
         } : {
           ...l
         };
-        D(r(T, {
+        N(r(T, {
           ...w
         }), w);
       }), i && E.push({
@@ -3602,7 +3602,7 @@ To suppress this warning, you need to explicitly provide the \`palette.${t}Chann
 function wd(e) {
   return typeof e == "number" ? `${e}px` : typeof e == "string" || typeof e == "function" || Array.isArray(e) ? e : "8px";
 }
-const Ce = (e) => {
+const ve = (e) => {
   try {
     return e();
   } catch {
@@ -3673,7 +3673,7 @@ function xd(e = {}, ...t) {
   a && (E = "oklch");
   const b = qt(E, Q, H, A, m);
   f && !Q.light && qt(E, Q, f, void 0, "light"), v && !Q.dark && qt(E, Q, v, void 0, "dark");
-  let D = {
+  let N = {
     defaultColorScheme: m,
     ...b,
     cssVarPrefix: i,
@@ -3687,58 +3687,58 @@ function xd(e = {}, ...t) {
     },
     spacing: wd(A.spacing)
   };
-  Object.keys(D.colorSchemes).forEach((T) => {
-    const l = D.colorSchemes[T].palette, I = (N) => {
-      const M = N.split("-"), J = M[1], le = M[2];
-      return g(N, l[J][le]);
+  Object.keys(N.colorSchemes).forEach((T) => {
+    const l = N.colorSchemes[T].palette, I = (D) => {
+      const M = D.split("-"), J = M[1], le = M[2];
+      return g(D, l[J][le]);
     };
     l.mode === "light" && (C(l.common, "background", "#fff"), C(l.common, "onBackground", "#000")), l.mode === "dark" && (C(l.common, "background", "#000"), C(l.common, "onBackground", "#fff"));
-    function w(N, M, J) {
+    function w(D, M, J) {
       if (E) {
         let le;
-        return N === Te && (le = `transparent ${((1 - J) * 100).toFixed(0)}%`), N === ee && (le = `#000 ${(J * 100).toFixed(0)}%`), N === te && (le = `#fff ${(J * 100).toFixed(0)}%`), `color-mix(in ${E}, ${M}, ${le})`;
+        return D === Te && (le = `transparent ${((1 - J) * 100).toFixed(0)}%`), D === ee && (le = `#000 ${(J * 100).toFixed(0)}%`), D === te && (le = `#fff ${(J * 100).toFixed(0)}%`), `color-mix(in ${E}, ${M}, ${le})`;
       }
-      return N(M, J);
+      return D(M, J);
     }
     if (vd(l, ["Alert", "AppBar", "Avatar", "Button", "Chip", "FilledInput", "LinearProgress", "Skeleton", "Slider", "SnackbarContent", "SpeedDialAction", "StepConnector", "StepContent", "Switch", "TableCell", "Tooltip"]), l.mode === "light") {
-      C(l.Alert, "errorColor", w(ee, a ? g("palette-error-light") : l.error.light, 0.6)), C(l.Alert, "infoColor", w(ee, a ? g("palette-info-light") : l.info.light, 0.6)), C(l.Alert, "successColor", w(ee, a ? g("palette-success-light") : l.success.light, 0.6)), C(l.Alert, "warningColor", w(ee, a ? g("palette-warning-light") : l.warning.light, 0.6)), C(l.Alert, "errorFilledBg", I("palette-error-main")), C(l.Alert, "infoFilledBg", I("palette-info-main")), C(l.Alert, "successFilledBg", I("palette-success-main")), C(l.Alert, "warningFilledBg", I("palette-warning-main")), C(l.Alert, "errorFilledColor", Ce(() => l.getContrastText(l.error.main))), C(l.Alert, "infoFilledColor", Ce(() => l.getContrastText(l.info.main))), C(l.Alert, "successFilledColor", Ce(() => l.getContrastText(l.success.main))), C(l.Alert, "warningFilledColor", Ce(() => l.getContrastText(l.warning.main))), C(l.Alert, "errorStandardBg", w(te, a ? g("palette-error-light") : l.error.light, 0.9)), C(l.Alert, "infoStandardBg", w(te, a ? g("palette-info-light") : l.info.light, 0.9)), C(l.Alert, "successStandardBg", w(te, a ? g("palette-success-light") : l.success.light, 0.9)), C(l.Alert, "warningStandardBg", w(te, a ? g("palette-warning-light") : l.warning.light, 0.9)), C(l.Alert, "errorIconColor", I("palette-error-main")), C(l.Alert, "infoIconColor", I("palette-info-main")), C(l.Alert, "successIconColor", I("palette-success-main")), C(l.Alert, "warningIconColor", I("palette-warning-main")), C(l.AppBar, "defaultBg", I("palette-grey-100")), C(l.Avatar, "defaultBg", I("palette-grey-400")), C(l.Button, "inheritContainedBg", I("palette-grey-300")), C(l.Button, "inheritContainedHoverBg", I("palette-grey-A100")), C(l.Chip, "defaultBorder", I("palette-grey-400")), C(l.Chip, "defaultAvatarColor", I("palette-grey-700")), C(l.Chip, "defaultIconColor", I("palette-grey-700")), C(l.FilledInput, "bg", "rgba(0, 0, 0, 0.06)"), C(l.FilledInput, "hoverBg", "rgba(0, 0, 0, 0.09)"), C(l.FilledInput, "disabledBg", "rgba(0, 0, 0, 0.12)"), C(l.LinearProgress, "primaryBg", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.LinearProgress, "secondaryBg", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.LinearProgress, "errorBg", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.LinearProgress, "infoBg", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.LinearProgress, "successBg", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.LinearProgress, "warningBg", w(te, a ? g("palette-warning-light") : l.warning.main, 0.62)), C(l.Skeleton, "bg", E ? w(Te, a ? g("palette-text-primary") : l.text.primary, 0.11) : `rgba(${I("palette-text-primaryChannel")} / 0.11)`), C(l.Slider, "primaryTrack", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.Slider, "secondaryTrack", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.Slider, "errorTrack", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.Slider, "infoTrack", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.Slider, "successTrack", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.Slider, "warningTrack", w(te, a ? g("palette-warning-main") : l.warning.main, 0.62));
-      const N = E ? w(ee, a ? g("palette-background-default") : l.background.default, 0.6825) : Ct(l.background.default, 0.8);
-      C(l.SnackbarContent, "bg", N), C(l.SnackbarContent, "color", Ce(() => E ? ar.text.primary : l.getContrastText(N))), C(l.SpeedDialAction, "fabHoverBg", Ct(l.background.paper, 0.15)), C(l.StepConnector, "border", I("palette-grey-400")), C(l.StepContent, "border", I("palette-grey-400")), C(l.Switch, "defaultColor", I("palette-common-white")), C(l.Switch, "defaultDisabledColor", I("palette-grey-100")), C(l.Switch, "primaryDisabledColor", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.Switch, "secondaryDisabledColor", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.Switch, "errorDisabledColor", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.Switch, "infoDisabledColor", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.Switch, "successDisabledColor", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.Switch, "warningDisabledColor", w(te, a ? g("palette-warning-main") : l.warning.main, 0.62)), C(l.TableCell, "border", w(te, Te(a ? g("palette-divider") : l.divider, 1), 0.88)), C(l.Tooltip, "bg", w(Te, a ? g("palette-grey-700") : l.grey[700], 0.92));
+      C(l.Alert, "errorColor", w(ee, a ? g("palette-error-light") : l.error.light, 0.6)), C(l.Alert, "infoColor", w(ee, a ? g("palette-info-light") : l.info.light, 0.6)), C(l.Alert, "successColor", w(ee, a ? g("palette-success-light") : l.success.light, 0.6)), C(l.Alert, "warningColor", w(ee, a ? g("palette-warning-light") : l.warning.light, 0.6)), C(l.Alert, "errorFilledBg", I("palette-error-main")), C(l.Alert, "infoFilledBg", I("palette-info-main")), C(l.Alert, "successFilledBg", I("palette-success-main")), C(l.Alert, "warningFilledBg", I("palette-warning-main")), C(l.Alert, "errorFilledColor", ve(() => l.getContrastText(l.error.main))), C(l.Alert, "infoFilledColor", ve(() => l.getContrastText(l.info.main))), C(l.Alert, "successFilledColor", ve(() => l.getContrastText(l.success.main))), C(l.Alert, "warningFilledColor", ve(() => l.getContrastText(l.warning.main))), C(l.Alert, "errorStandardBg", w(te, a ? g("palette-error-light") : l.error.light, 0.9)), C(l.Alert, "infoStandardBg", w(te, a ? g("palette-info-light") : l.info.light, 0.9)), C(l.Alert, "successStandardBg", w(te, a ? g("palette-success-light") : l.success.light, 0.9)), C(l.Alert, "warningStandardBg", w(te, a ? g("palette-warning-light") : l.warning.light, 0.9)), C(l.Alert, "errorIconColor", I("palette-error-main")), C(l.Alert, "infoIconColor", I("palette-info-main")), C(l.Alert, "successIconColor", I("palette-success-main")), C(l.Alert, "warningIconColor", I("palette-warning-main")), C(l.AppBar, "defaultBg", I("palette-grey-100")), C(l.Avatar, "defaultBg", I("palette-grey-400")), C(l.Button, "inheritContainedBg", I("palette-grey-300")), C(l.Button, "inheritContainedHoverBg", I("palette-grey-A100")), C(l.Chip, "defaultBorder", I("palette-grey-400")), C(l.Chip, "defaultAvatarColor", I("palette-grey-700")), C(l.Chip, "defaultIconColor", I("palette-grey-700")), C(l.FilledInput, "bg", "rgba(0, 0, 0, 0.06)"), C(l.FilledInput, "hoverBg", "rgba(0, 0, 0, 0.09)"), C(l.FilledInput, "disabledBg", "rgba(0, 0, 0, 0.12)"), C(l.LinearProgress, "primaryBg", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.LinearProgress, "secondaryBg", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.LinearProgress, "errorBg", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.LinearProgress, "infoBg", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.LinearProgress, "successBg", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.LinearProgress, "warningBg", w(te, a ? g("palette-warning-light") : l.warning.main, 0.62)), C(l.Skeleton, "bg", E ? w(Te, a ? g("palette-text-primary") : l.text.primary, 0.11) : `rgba(${I("palette-text-primaryChannel")} / 0.11)`), C(l.Slider, "primaryTrack", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.Slider, "secondaryTrack", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.Slider, "errorTrack", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.Slider, "infoTrack", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.Slider, "successTrack", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.Slider, "warningTrack", w(te, a ? g("palette-warning-main") : l.warning.main, 0.62));
+      const D = E ? w(ee, a ? g("palette-background-default") : l.background.default, 0.6825) : Ct(l.background.default, 0.8);
+      C(l.SnackbarContent, "bg", D), C(l.SnackbarContent, "color", ve(() => E ? ar.text.primary : l.getContrastText(D))), C(l.SpeedDialAction, "fabHoverBg", Ct(l.background.paper, 0.15)), C(l.StepConnector, "border", I("palette-grey-400")), C(l.StepContent, "border", I("palette-grey-400")), C(l.Switch, "defaultColor", I("palette-common-white")), C(l.Switch, "defaultDisabledColor", I("palette-grey-100")), C(l.Switch, "primaryDisabledColor", w(te, a ? g("palette-primary-main") : l.primary.main, 0.62)), C(l.Switch, "secondaryDisabledColor", w(te, a ? g("palette-secondary-main") : l.secondary.main, 0.62)), C(l.Switch, "errorDisabledColor", w(te, a ? g("palette-error-main") : l.error.main, 0.62)), C(l.Switch, "infoDisabledColor", w(te, a ? g("palette-info-main") : l.info.main, 0.62)), C(l.Switch, "successDisabledColor", w(te, a ? g("palette-success-main") : l.success.main, 0.62)), C(l.Switch, "warningDisabledColor", w(te, a ? g("palette-warning-main") : l.warning.main, 0.62)), C(l.TableCell, "border", w(te, Te(a ? g("palette-divider") : l.divider, 1), 0.88)), C(l.Tooltip, "bg", w(Te, a ? g("palette-grey-700") : l.grey[700], 0.92));
     }
     if (l.mode === "dark") {
-      C(l.Alert, "errorColor", w(te, a ? g("palette-error-light") : l.error.light, 0.6)), C(l.Alert, "infoColor", w(te, a ? g("palette-info-light") : l.info.light, 0.6)), C(l.Alert, "successColor", w(te, a ? g("palette-success-light") : l.success.light, 0.6)), C(l.Alert, "warningColor", w(te, a ? g("palette-warning-light") : l.warning.light, 0.6)), C(l.Alert, "errorFilledBg", I("palette-error-dark")), C(l.Alert, "infoFilledBg", I("palette-info-dark")), C(l.Alert, "successFilledBg", I("palette-success-dark")), C(l.Alert, "warningFilledBg", I("palette-warning-dark")), C(l.Alert, "errorFilledColor", Ce(() => l.getContrastText(l.error.dark))), C(l.Alert, "infoFilledColor", Ce(() => l.getContrastText(l.info.dark))), C(l.Alert, "successFilledColor", Ce(() => l.getContrastText(l.success.dark))), C(l.Alert, "warningFilledColor", Ce(() => l.getContrastText(l.warning.dark))), C(l.Alert, "errorStandardBg", w(ee, a ? g("palette-error-light") : l.error.light, 0.9)), C(l.Alert, "infoStandardBg", w(ee, a ? g("palette-info-light") : l.info.light, 0.9)), C(l.Alert, "successStandardBg", w(ee, a ? g("palette-success-light") : l.success.light, 0.9)), C(l.Alert, "warningStandardBg", w(ee, a ? g("palette-warning-light") : l.warning.light, 0.9)), C(l.Alert, "errorIconColor", I("palette-error-main")), C(l.Alert, "infoIconColor", I("palette-info-main")), C(l.Alert, "successIconColor", I("palette-success-main")), C(l.Alert, "warningIconColor", I("palette-warning-main")), C(l.AppBar, "defaultBg", I("palette-grey-900")), C(l.AppBar, "darkBg", I("palette-background-paper")), C(l.AppBar, "darkColor", I("palette-text-primary")), C(l.Avatar, "defaultBg", I("palette-grey-600")), C(l.Button, "inheritContainedBg", I("palette-grey-800")), C(l.Button, "inheritContainedHoverBg", I("palette-grey-700")), C(l.Chip, "defaultBorder", I("palette-grey-700")), C(l.Chip, "defaultAvatarColor", I("palette-grey-300")), C(l.Chip, "defaultIconColor", I("palette-grey-300")), C(l.FilledInput, "bg", "rgba(255, 255, 255, 0.09)"), C(l.FilledInput, "hoverBg", "rgba(255, 255, 255, 0.13)"), C(l.FilledInput, "disabledBg", "rgba(255, 255, 255, 0.12)"), C(l.LinearProgress, "primaryBg", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.5)), C(l.LinearProgress, "secondaryBg", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.5)), C(l.LinearProgress, "errorBg", w(ee, a ? g("palette-error-main") : l.error.main, 0.5)), C(l.LinearProgress, "infoBg", w(ee, a ? g("palette-info-main") : l.info.main, 0.5)), C(l.LinearProgress, "successBg", w(ee, a ? g("palette-success-main") : l.success.main, 0.5)), C(l.LinearProgress, "warningBg", w(ee, a ? g("palette-warning-main") : l.warning.main, 0.5)), C(l.Skeleton, "bg", E ? w(Te, a ? g("palette-text-primary") : l.text.primary, 0.13) : `rgba(${I("palette-text-primaryChannel")} / 0.13)`), C(l.Slider, "primaryTrack", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.5)), C(l.Slider, "secondaryTrack", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.5)), C(l.Slider, "errorTrack", w(ee, a ? g("palette-error-main") : l.error.main, 0.5)), C(l.Slider, "infoTrack", w(ee, a ? g("palette-info-main") : l.info.main, 0.5)), C(l.Slider, "successTrack", w(ee, a ? g("palette-success-main") : l.success.main, 0.5)), C(l.Slider, "warningTrack", w(ee, a ? g("palette-warning-light") : l.warning.main, 0.5));
-      const N = E ? w(te, a ? g("palette-background-default") : l.background.default, 0.985) : Ct(l.background.default, 0.98);
-      C(l.SnackbarContent, "bg", N), C(l.SnackbarContent, "color", Ce(() => E ? lo.text.primary : l.getContrastText(N))), C(l.SpeedDialAction, "fabHoverBg", Ct(l.background.paper, 0.15)), C(l.StepConnector, "border", I("palette-grey-600")), C(l.StepContent, "border", I("palette-grey-600")), C(l.Switch, "defaultColor", I("palette-grey-300")), C(l.Switch, "defaultDisabledColor", I("palette-grey-600")), C(l.Switch, "primaryDisabledColor", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.55)), C(l.Switch, "secondaryDisabledColor", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.55)), C(l.Switch, "errorDisabledColor", w(ee, a ? g("palette-error-main") : l.error.main, 0.55)), C(l.Switch, "infoDisabledColor", w(ee, a ? g("palette-info-main") : l.info.main, 0.55)), C(l.Switch, "successDisabledColor", w(ee, a ? g("palette-success-main") : l.success.main, 0.55)), C(l.Switch, "warningDisabledColor", w(ee, a ? g("palette-warning-light") : l.warning.main, 0.55)), C(l.TableCell, "border", w(ee, Te(a ? g("palette-divider") : l.divider, 1), 0.68)), C(l.Tooltip, "bg", w(Te, a ? g("palette-grey-700") : l.grey[700], 0.92));
+      C(l.Alert, "errorColor", w(te, a ? g("palette-error-light") : l.error.light, 0.6)), C(l.Alert, "infoColor", w(te, a ? g("palette-info-light") : l.info.light, 0.6)), C(l.Alert, "successColor", w(te, a ? g("palette-success-light") : l.success.light, 0.6)), C(l.Alert, "warningColor", w(te, a ? g("palette-warning-light") : l.warning.light, 0.6)), C(l.Alert, "errorFilledBg", I("palette-error-dark")), C(l.Alert, "infoFilledBg", I("palette-info-dark")), C(l.Alert, "successFilledBg", I("palette-success-dark")), C(l.Alert, "warningFilledBg", I("palette-warning-dark")), C(l.Alert, "errorFilledColor", ve(() => l.getContrastText(l.error.dark))), C(l.Alert, "infoFilledColor", ve(() => l.getContrastText(l.info.dark))), C(l.Alert, "successFilledColor", ve(() => l.getContrastText(l.success.dark))), C(l.Alert, "warningFilledColor", ve(() => l.getContrastText(l.warning.dark))), C(l.Alert, "errorStandardBg", w(ee, a ? g("palette-error-light") : l.error.light, 0.9)), C(l.Alert, "infoStandardBg", w(ee, a ? g("palette-info-light") : l.info.light, 0.9)), C(l.Alert, "successStandardBg", w(ee, a ? g("palette-success-light") : l.success.light, 0.9)), C(l.Alert, "warningStandardBg", w(ee, a ? g("palette-warning-light") : l.warning.light, 0.9)), C(l.Alert, "errorIconColor", I("palette-error-main")), C(l.Alert, "infoIconColor", I("palette-info-main")), C(l.Alert, "successIconColor", I("palette-success-main")), C(l.Alert, "warningIconColor", I("palette-warning-main")), C(l.AppBar, "defaultBg", I("palette-grey-900")), C(l.AppBar, "darkBg", I("palette-background-paper")), C(l.AppBar, "darkColor", I("palette-text-primary")), C(l.Avatar, "defaultBg", I("palette-grey-600")), C(l.Button, "inheritContainedBg", I("palette-grey-800")), C(l.Button, "inheritContainedHoverBg", I("palette-grey-700")), C(l.Chip, "defaultBorder", I("palette-grey-700")), C(l.Chip, "defaultAvatarColor", I("palette-grey-300")), C(l.Chip, "defaultIconColor", I("palette-grey-300")), C(l.FilledInput, "bg", "rgba(255, 255, 255, 0.09)"), C(l.FilledInput, "hoverBg", "rgba(255, 255, 255, 0.13)"), C(l.FilledInput, "disabledBg", "rgba(255, 255, 255, 0.12)"), C(l.LinearProgress, "primaryBg", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.5)), C(l.LinearProgress, "secondaryBg", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.5)), C(l.LinearProgress, "errorBg", w(ee, a ? g("palette-error-main") : l.error.main, 0.5)), C(l.LinearProgress, "infoBg", w(ee, a ? g("palette-info-main") : l.info.main, 0.5)), C(l.LinearProgress, "successBg", w(ee, a ? g("palette-success-main") : l.success.main, 0.5)), C(l.LinearProgress, "warningBg", w(ee, a ? g("palette-warning-main") : l.warning.main, 0.5)), C(l.Skeleton, "bg", E ? w(Te, a ? g("palette-text-primary") : l.text.primary, 0.13) : `rgba(${I("palette-text-primaryChannel")} / 0.13)`), C(l.Slider, "primaryTrack", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.5)), C(l.Slider, "secondaryTrack", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.5)), C(l.Slider, "errorTrack", w(ee, a ? g("palette-error-main") : l.error.main, 0.5)), C(l.Slider, "infoTrack", w(ee, a ? g("palette-info-main") : l.info.main, 0.5)), C(l.Slider, "successTrack", w(ee, a ? g("palette-success-main") : l.success.main, 0.5)), C(l.Slider, "warningTrack", w(ee, a ? g("palette-warning-light") : l.warning.main, 0.5));
+      const D = E ? w(te, a ? g("palette-background-default") : l.background.default, 0.985) : Ct(l.background.default, 0.98);
+      C(l.SnackbarContent, "bg", D), C(l.SnackbarContent, "color", ve(() => E ? lo.text.primary : l.getContrastText(D))), C(l.SpeedDialAction, "fabHoverBg", Ct(l.background.paper, 0.15)), C(l.StepConnector, "border", I("palette-grey-600")), C(l.StepContent, "border", I("palette-grey-600")), C(l.Switch, "defaultColor", I("palette-grey-300")), C(l.Switch, "defaultDisabledColor", I("palette-grey-600")), C(l.Switch, "primaryDisabledColor", w(ee, a ? g("palette-primary-main") : l.primary.main, 0.55)), C(l.Switch, "secondaryDisabledColor", w(ee, a ? g("palette-secondary-main") : l.secondary.main, 0.55)), C(l.Switch, "errorDisabledColor", w(ee, a ? g("palette-error-main") : l.error.main, 0.55)), C(l.Switch, "infoDisabledColor", w(ee, a ? g("palette-info-main") : l.info.main, 0.55)), C(l.Switch, "successDisabledColor", w(ee, a ? g("palette-success-main") : l.success.main, 0.55)), C(l.Switch, "warningDisabledColor", w(ee, a ? g("palette-warning-light") : l.warning.main, 0.55)), C(l.TableCell, "border", w(ee, Te(a ? g("palette-divider") : l.divider, 1), 0.68)), C(l.Tooltip, "bg", w(Te, a ? g("palette-grey-700") : l.grey[700], 0.92));
     }
-    a || (be(l.background, "default"), be(l.background, "paper"), be(l.common, "background"), be(l.common, "onBackground"), be(l, "divider")), Object.keys(l).forEach((N) => {
-      const M = l[N];
-      N !== "tonalOffset" && !a && M && typeof M == "object" && (M.main && C(l[N], "mainChannel", nt(ot(M.main))), M.light && C(l[N], "lightChannel", nt(ot(M.light))), M.dark && C(l[N], "darkChannel", nt(ot(M.dark))), M.contrastText && C(l[N], "contrastTextChannel", nt(ot(M.contrastText))), N === "text" && (be(l[N], "primary"), be(l[N], "secondary")), N === "action" && (M.active && be(l[N], "active"), M.selected && be(l[N], "selected")));
+    a || (be(l.background, "default"), be(l.background, "paper"), be(l.common, "background"), be(l.common, "onBackground"), be(l, "divider")), Object.keys(l).forEach((D) => {
+      const M = l[D];
+      D !== "tonalOffset" && !a && M && typeof M == "object" && (M.main && C(l[D], "mainChannel", nt(ot(M.main))), M.light && C(l[D], "lightChannel", nt(ot(M.light))), M.dark && C(l[D], "darkChannel", nt(ot(M.dark))), M.contrastText && C(l[D], "contrastTextChannel", nt(ot(M.contrastText))), D === "text" && (be(l[D], "primary"), be(l[D], "secondary")), D === "action" && (M.active && be(l[D], "active"), M.selected && be(l[D], "selected")));
     });
-  }), D = t.reduce((T, l) => ge(T, l), D);
+  }), N = t.reduce((T, l) => ge(T, l), N);
   const P = {
     prefix: i,
     disableCssColorScheme: o,
     shouldSkipGeneratingVar: s,
-    getSelector: Cd(D),
+    getSelector: Cd(N),
     enableContrastVars: a
   }, {
     vars: k,
     generateThemeVars: R,
-    generateStyleSheets: L
-  } = ja(D, P);
-  return D.vars = k, Object.entries(D.colorSchemes[D.defaultColorScheme]).forEach(([T, l]) => {
-    D[T] = l;
-  }), D.generateThemeVars = R, D.generateStyleSheets = L, D.generateSpacing = function() {
+    generateStyleSheets: Y
+  } = ja(N, P);
+  return N.vars = k, Object.entries(N.colorSchemes[N.defaultColorScheme]).forEach(([T, l]) => {
+    N[T] = l;
+  }), N.generateThemeVars = R, N.generateStyleSheets = Y, N.generateSpacing = function() {
     return _n(A.spacing, mr(this));
-  }, D.getColorSchemeSelector = Ua(c), D.spacing = D.generateSpacing(), D.shouldSkipGeneratingVar = s, D.unstable_sxConfig = {
+  }, N.getColorSchemeSelector = Ua(c), N.spacing = N.generateSpacing(), N.shouldSkipGeneratingVar = s, N.unstable_sxConfig = {
     ...Tt,
     ...A == null ? void 0 : A.unstable_sxConfig
-  }, D.unstable_sx = function(l) {
+  }, N.unstable_sx = function(l) {
     return _e({
       sx: l,
       theme: this
     });
-  }, D.toRuntimeSource = uo, D;
+  }, N.toRuntimeSource = uo, N;
 }
 function sn(e, t, r) {
   e.colorSchemes && r && (e.colorSchemes[t] = {
@@ -4184,7 +4184,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
   size: s = "md"
 }) => /* @__PURE__ */ d(qe, { children: e && /* @__PURE__ */ p(De, { children: [
   /* @__PURE__ */ d(
-    ue.div,
+    ce.div,
     {
       initial: { opacity: 0 },
       animate: { opacity: 1 },
@@ -4196,7 +4196,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
     "overlay"
   ),
   /* @__PURE__ */ d("div", { className: "fixed inset-0 z-50 flex items-center justify-center p-4", children: /* @__PURE__ */ p(
-    ue.div,
+    ce.div,
     {
       initial: { opacity: 0, y: 60 },
       animate: { opacity: 1, y: 0 },
@@ -4255,7 +4255,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
   };
   return /* @__PURE__ */ d(qe, { children: e && /* @__PURE__ */ p(De, { children: [
     /* @__PURE__ */ d(
-      ue.div,
+      ce.div,
       {
         initial: { opacity: 0 },
         animate: { opacity: 1 },
@@ -4265,7 +4265,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
       }
     ),
     /* @__PURE__ */ d("div", { className: "fixed inset-0 z-50 flex items-center justify-center p-4", children: /* @__PURE__ */ p(
-      ue.div,
+      ce.div,
       {
         initial: { opacity: 0, scale: 0.95 },
         animate: { opacity: 1, scale: 1 },
@@ -4346,7 +4346,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
           /* @__PURE__ */ d("div", { className: `text-sm text-gray-400 break-words whitespace-pre-line ${i.mono ? "font-mono text-xs break-all" : ""}`, children: i.value })
         ] }),
         i.type === "pdf" && i.value !== "No registrado" && /* @__PURE__ */ d("div", { className: "flex-shrink-0", children: /* @__PURE__ */ d(dt, { title: "Visualizar documento PDF", arrow: !0, placement: "top", children: /* @__PURE__ */ d("span", { children: /* @__PURE__ */ d(
-          ve,
+          we,
           {
             size: "sm",
             variant: "ghost",
@@ -4365,7 +4365,7 @@ const Rd = go(/* @__PURE__ */ d("path", {
               return !1;
             }
           })(u) ? null : /* @__PURE__ */ d("div", { className: "flex-shrink-0", children: /* @__PURE__ */ d(dt, { title: "Abrir sitio web", arrow: !0, placement: "top", children: /* @__PURE__ */ d("span", { children: /* @__PURE__ */ d(
-            ve,
+            we,
             {
               size: "sm",
               variant: "ghost",
@@ -5061,7 +5061,7 @@ function Vd(e, t) {
   }
   return String(e);
 }
-var Xd = "1.2.0", Zd = "1.7.35", un = " ext. ", ce = /* @__PURE__ */ function() {
+var Xd = "1.2.0", Zd = "1.7.35", un = " ext. ", ue = /* @__PURE__ */ function() {
   function e(t) {
     Lt(this, e), ho(t), this.metadata = t, po.call(this, t);
   }
@@ -5500,7 +5500,7 @@ var es = function(t) {
   return et(t);
 };
 function mo(e, t) {
-  var r = new ce(t);
+  var r = new ue(t);
   if (r.hasCountry(e))
     return r.selectNumberingPlan(e).countryCallingCode();
   throw new Error("Unknown country: ".concat(e));
@@ -5516,7 +5516,7 @@ function wr(e, t, r) {
   return rs(e, void 0, t, r);
 }
 function rs(e, t, r, n) {
-  r && (n = new ce(n.metadata), n.selectNumberingPlan(r));
+  r && (n = new ue(n.metadata), n.selectNumberingPlan(r));
   var o = n.type(t), i = o && o.possibleLengths() || n.possibleLengths();
   if (!i)
     return "IS_POSSIBLE";
@@ -5525,7 +5525,7 @@ function rs(e, t, r, n) {
 }
 function ns(e, t, r) {
   t === void 0 && (t = {});
-  var n = new ce(r);
+  var n = new ue(r);
   if (t.v2) {
     if (!e.countryCallingCode)
       throw new Error("Invalid phone number object passed");
@@ -5588,7 +5588,7 @@ function gn(e, t) {
 var as = ["MOBILE", "PREMIUM_RATE", "TOLL_FREE", "SHARED_COST", "VOIP", "PERSONAL_NUMBER", "PAGER", "UAN", "VOICEMAIL"];
 function br(e, t, r) {
   if (t = t || {}, !(!e.country && !e.countryCallingCode)) {
-    var n = new ce(r);
+    var n = new ue(r);
     n.selectNumberingPlan(e.country || e.countryCallingCode);
     var o = t.v2 ? e.nationalNumber : e.phone;
     if (Ie(o, n.nationalNumberPattern())) {
@@ -5608,7 +5608,7 @@ function $t(e, t, r) {
 }
 function ds(e, t, r) {
   t = t || {};
-  var n = new ce(r);
+  var n = new ue(r);
   if (n.selectNumberingPlan(e.country || e.countryCallingCode), n.hasTypes())
     return br(e, t, n.metadata) !== void 0;
   var o = t.v2 ? e.nationalNumber : e.phone;
@@ -5619,26 +5619,26 @@ function ls(e) {
   return ss.test(e);
 }
 function cs(e, t) {
-  var r, n, o = new ce(t);
+  var r, n, o = new ue(t);
   return ls(e) ? (r = e, o.selectNumberingPlan(r), n = o.countryCallingCode()) : n = e, {
     country: r,
     callingCode: n
   };
 }
 function us(e, t, r) {
-  var n = new ce(r), o = n.getCountryCodesForCallingCode(e);
+  var n = new ue(r), o = n.getCountryCodesForCallingCode(e);
   return o ? o.filter(function(i) {
     return fs(t, i, r);
   }) : [];
 }
 function fs(e, t, r) {
-  var n = new ce(r);
+  var n = new ue(r);
   return n.selectNumberingPlan(t), n.numberingPlan.possibleLengths().indexOf(e.length) >= 0;
 }
 var xr = 2, As = 17, gs = 3, pe = "0-9０-９٠-٩۰-۹", hs = "-‐-―−ー－", ms = "／/", ps = "．.", ys = "  ­​⁠　", Cs = "()（）［］\\[\\]", vs = "~⁓∼～", Dt = "".concat(hs).concat(ms).concat(ps).concat(ys).concat(Cs).concat(vs), Er = "+＋", ws = new RegExp("([" + pe + "])");
 function bs(e, t, r, n) {
   if (t) {
-    var o = new ce(n);
+    var o = new ue(n);
     o.selectNumberingPlan(t || r);
     var i = new RegExp(o.IDDPrefix());
     if (e.search(i) === 0) {
@@ -5703,7 +5703,7 @@ function hn(e, t) {
   return n;
 }
 function Ns(e, t, r) {
-  for (var n = new ce(r), o = Es(t), i; !(i = o()).done; ) {
+  for (var n = new ue(r), o = Es(t), i; !(i = o()).done; ) {
     var a = i.value;
     if (n.selectNumberingPlan(a), n.leadingDigits()) {
       if (e && e.search(n.leadingDigits()) === 0)
@@ -5759,7 +5759,7 @@ function Bs(e, t, r, n, o) {
     };
   var i = r ? mo(r, o) : n;
   if (e.indexOf(i) === 0) {
-    var a = new ce(o);
+    var a = new ue(o);
     a.selectNumberingPlan(r || n);
     var s = e.slice(i.length), c = sr(s, void 0, a), u = c.nationalNumber, A = sr(e, void 0, a), h = A.nationalNumber;
     if (!Ie(h, a.nationalNumberPattern()) && Ie(u, a.nationalNumberPattern()) || wr(h, void 0, a) === "TOO_LONG")
@@ -5799,7 +5799,7 @@ function vo(e, t, r, n, o) {
   }
   if (e[1] === "0")
     return {};
-  for (var A = new ce(o), h = 2; h - 1 <= gs && h <= e.length; ) {
+  for (var A = new ue(o), h = 2; h - 1 <= gs && h <= e.length; ) {
     var m = e.slice(1, h);
     if (A.hasCallingCode(m))
       return A.selectNumberingPlan(m), {
@@ -5836,7 +5836,7 @@ function Qs(e, t, r) {
 }
 var Ms = /^[\d]+(?:[~\u2053\u223C\uFF5E][\d]+)?$/;
 function Hs(e, t, r) {
-  var n = new ce(r);
+  var n = new ue(r);
   if (n.selectNumberingPlan(e || t), n.defaultIDDPrefix())
     return n.defaultIDDPrefix();
   if (Ms.test(n.IDDPrefix()))
@@ -5876,7 +5876,7 @@ var mn = {
 };
 function zs(e, t, r, n) {
   r ? r = Ws({}, mn, r) : r = mn;
-  var o = new ce(n);
+  var o = new ue(n);
   if (e.country && e.country !== "001") {
     if (!o.hasCountry(e.country))
       throw new Error("Unknown country: ".concat(e.country));
@@ -6066,7 +6066,7 @@ var e0 = /* @__PURE__ */ function() {
   }, {
     key: "isNonGeographic",
     value: function() {
-      var r = new ce(this.getMetadata());
+      var r = new ue(this.getMetadata());
       return r.isNonGeographicCallingCode(this.countryCallingCode);
     }
   }, {
@@ -6378,7 +6378,7 @@ function I0(e, t) {
 var P0 = 250, B0 = new RegExp("[" + Er + pe + "]"), O0 = new RegExp("[^" + pe + "#]+$");
 function S0(e, t, r) {
   t = t || {};
-  var n = new ce(r);
+  var n = new ue(r);
   if (t.defaultCountry && !n.hasCountry(t.defaultCountry))
     throw t.v2 ? new xe("INVALID_COUNTRY") : new Error("Unknown country: ".concat(t.defaultCountry));
   var o = M0(e, t.v2, t.extract), i = o.number, a = o.ext, s = o.error;
@@ -6761,32 +6761,32 @@ const nc = ({ value: e }) => {
   value: h,
   disabled: m = !1
 }) => {
-  const g = c || u, y = a || s, [f, v] = oe(null), [O, Q] = oe(!1), [H, E] = oe(null), [b, D] = oe(!1), P = at(null), k = !!f || !!i, R = (N) => {
+  const g = c || u, y = a || s, [f, v] = oe(null), [O, Q] = oe(!1), [H, E] = oe(null), [b, N] = oe(!1), P = at(null), k = !!f || !!i, R = (D) => {
     var J;
-    const M = (J = N.target.files) == null ? void 0 : J[0];
-    M && L(M);
-  }, L = (N) => {
+    const M = (J = D.target.files) == null ? void 0 : J[0];
+    M && Y(M);
+  }, Y = (D) => {
     if (E(null), t) {
-      const J = t.split(",").map((B) => B.trim().toLowerCase()), le = N.type.toLowerCase(), Pe = N.name.toLowerCase();
+      const J = t.split(",").map((B) => B.trim().toLowerCase()), le = D.type.toLowerCase(), Pe = D.name.toLowerCase();
       if (!J.some((B) => B.startsWith(".") ? Pe.endsWith(B) : B.includes("*") ? new RegExp("^" + B.replace(/\*/g, ".*") + "$").test(le) : le === B)) {
-        E(`El tipo de archivo no es válido (${N.name}).`);
+        E(`El tipo de archivo no es válido (${D.name}).`);
         return;
       }
     }
-    if (N.size > g * 1024 * 1024) {
+    if (D.size > g * 1024 * 1024) {
       E(`El archivo supera el límite de ${g}MB`);
       return;
     }
-    v(N), D(!0);
+    v(D), N(!0);
     const M = new FileReader();
     M.onload = () => {
       const J = M.result;
-      r(J, N), D(!1);
+      r(J, D), N(!1);
     }, M.onerror = () => {
-      E("Error al leer el archivo"), D(!1);
-    }, M.readAsDataURL(N);
-  }, T = (N) => {
-    N.stopPropagation(), v(null), E(null), r(null, null), n && n(), P.current && (P.current.value = "");
+      E("Error al leer el archivo"), N(!1);
+    }, M.readAsDataURL(D);
+  }, T = (D) => {
+    D.stopPropagation(), v(null), E(null), r(null, null), n && n(), P.current && (P.current.value = "");
   };
   return /* @__PURE__ */ p(z, { className: "w-full space-y-2", children: [
     e && /* @__PURE__ */ d(Z, { variant: "caption", className: "font-semibold text-gray-700", children: e }),
@@ -6794,20 +6794,20 @@ const nc = ({ value: e }) => {
       "div",
       {
         onClick: () => {
-          var N;
-          return (N = P.current) == null ? void 0 : N.click();
+          var D;
+          return (D = P.current) == null ? void 0 : D.click();
         },
-        onDragOver: (N) => {
-          N.preventDefault(), Q(!0);
+        onDragOver: (D) => {
+          D.preventDefault(), Q(!0);
         },
         onDragLeave: () => {
           Q(!1);
         },
-        onDrop: (N) => {
+        onDrop: (D) => {
           var J;
-          N.preventDefault(), Q(!1);
-          const M = (J = N.dataTransfer.files) == null ? void 0 : J[0];
-          M && L(M);
+          D.preventDefault(), Q(!1);
+          const M = (J = D.dataTransfer.files) == null ? void 0 : J[0];
+          M && Y(M);
         },
         className: `
                     relative group cursor-pointer border-2 border-dashed rounded-xl p-6 transition-all duration-300
@@ -6844,8 +6844,8 @@ const nc = ({ value: e }) => {
                 ke,
                 {
                   size: "small",
-                  onClick: (N) => {
-                    N.stopPropagation(), o();
+                  onClick: (D) => {
+                    D.stopPropagation(), o();
                   },
                   className: "text-gray-400 hover:text-primary",
                   children: /* @__PURE__ */ d(er, { size: 16 })
@@ -6877,22 +6877,22 @@ const nc = ({ value: e }) => {
   error: s = !1,
   disabled: c = !1
 }) => {
-  const [u, A] = oe(null), [h, m] = oe(!1), [g, y] = oe(null), [f, v] = oe(!1), O = at(null), Q = (R, L) => {
-    n && n(R, L), o && o(R, L);
+  const [u, A] = oe(null), [h, m] = oe(!1), [g, y] = oe(null), [f, v] = oe(!1), O = at(null), Q = (R, Y) => {
+    n && n(R, Y), o && o(R, Y);
   }, H = (R) => {
     var T;
-    const L = (T = R.target.files) == null ? void 0 : T[0];
-    L && E(L);
+    const Y = (T = R.target.files) == null ? void 0 : T[0];
+    Y && E(Y);
   }, E = (R) => {
     if (y(null), t && t !== "*/*") {
-      const T = t.split(",").map((N) => N.trim().toLowerCase()), l = R.type.toLowerCase(), I = R.name.toLowerCase();
-      if (!T.some((N) => {
-        if (N.startsWith(".")) return I.endsWith(N);
-        if (N.endsWith("/*")) {
-          const M = N.split("/")[0];
+      const T = t.split(",").map((D) => D.trim().toLowerCase()), l = R.type.toLowerCase(), I = R.name.toLowerCase();
+      if (!T.some((D) => {
+        if (D.startsWith(".")) return I.endsWith(D);
+        if (D.endsWith("/*")) {
+          const M = D.split("/")[0];
           return l.startsWith(`${M}/`);
         }
-        return N === l;
+        return D === l;
       })) {
         y(`El tipo de archivo no es válido. Formatos permitidos: ${t}`);
         return;
@@ -6906,13 +6906,13 @@ const nc = ({ value: e }) => {
       return;
     }
     A(R), v(!0);
-    const L = new FileReader();
-    L.onload = () => {
-      const l = L.result.split(",")[1];
+    const Y = new FileReader();
+    Y.onload = () => {
+      const l = Y.result.split(",")[1];
       Q(l, R), v(!1);
-    }, L.onerror = () => {
+    }, Y.onerror = () => {
       y("Error al leer el archivo"), v(!1);
-    }, L.readAsDataURL(R);
+    }, Y.readAsDataURL(R);
   }, b = (R) => {
     R.stopPropagation(), A(null), y(null), Q(null, null), O.current && (O.current.value = "");
   };
@@ -6938,8 +6938,8 @@ const nc = ({ value: e }) => {
           var T;
           if (c) return;
           R.preventDefault(), m(!1);
-          const L = (T = R.dataTransfer.files) == null ? void 0 : T[0];
-          L && E(L);
+          const Y = (T = R.dataTransfer.files) == null ? void 0 : T[0];
+          Y && E(Y);
         },
         className: `
                     relative group border-2 border-dashed rounded-xl p-6 transition-all duration-300
@@ -7012,7 +7012,7 @@ const nc = ({ value: e }) => {
   onDownloadCustom: c,
   onDownloadFile: u
 }) => {
-  const [A, h] = oe(""), [m, g] = oe(!0), [y, f] = oe(null), [v, O] = oe(!1), [Q, H] = oe({ x: 0, y: 0 }), [E, b] = oe(!1), D = at({
+  const [A, h] = oe(""), [m, g] = oe(!0), [y, f] = oe(null), [v, O] = oe(!1), [Q, H] = oe({ x: 0, y: 0 }), [E, b] = oe(!1), N = at({
     startX: 0,
     startY: 0,
     posX: 0,
@@ -7044,8 +7044,8 @@ const nc = ({ value: e }) => {
     };
   }, [e, r, n, a, s]), Le(() => {
     if (e && v) {
-      const N = Math.max(20, window.innerWidth - 640 - 30);
-      H({ x: N, y: 60 });
+      const D = Math.max(20, window.innerWidth - 640 - 30);
+      H({ x: D, y: 60 });
     }
   }, [e, v]);
   const P = () => {
@@ -7061,11 +7061,11 @@ const nc = ({ value: e }) => {
     }
   }, R = () => {
     A && window.open(A, "_blank", "noopener,noreferrer");
-  }, L = () => {
+  }, Y = () => {
     O((w) => !w);
   }, T = (w) => {
     if (v && !w.target.closest("button, a, input, .MuiIconButton-root, .MuiChip-root")) {
-      b(!0), D.current = {
+      b(!0), N.current = {
         startX: w.clientX,
         startY: w.clientY,
         posX: Q.x,
@@ -7078,7 +7078,7 @@ const nc = ({ value: e }) => {
     }
   }, l = (w) => {
     if (!E || !v) return;
-    const N = w.clientX - D.current.startX, M = w.clientY - D.current.startY, J = Math.max(10, Math.min(window.innerWidth - 250, D.current.posX + N)), le = Math.max(10, Math.min(window.innerHeight - 100, D.current.posY + M));
+    const D = w.clientX - N.current.startX, M = w.clientY - N.current.startY, J = Math.max(10, Math.min(window.innerWidth - 250, N.current.posX + D)), le = Math.max(10, Math.min(window.innerHeight - 100, N.current.posY + M));
     H({ x: J, y: le });
   }, I = (w) => {
     if (E) {
@@ -7189,7 +7189,7 @@ const nc = ({ value: e }) => {
                 /* @__PURE__ */ d(dt, { title: v ? "Acoplar modal al centro" : "Desacoplar ventana flotante (para comparar con formulario)", children: /* @__PURE__ */ d(
                   ke,
                   {
-                    onClick: L,
+                    onClick: Y,
                     size: "small",
                     color: v ? "primary" : "default",
                     sx: {
@@ -7216,7 +7216,7 @@ const nc = ({ value: e }) => {
                   }
                 ) }),
                 /* @__PURE__ */ d(
-                  ve,
+                  we,
                   {
                     variant: "primary",
                     size: "sm",
@@ -7250,7 +7250,7 @@ const nc = ({ value: e }) => {
           /* @__PURE__ */ d($e, { size: 64, className: "text-red-100 mb-4" }),
           /* @__PURE__ */ d(Z, { variant: "h6", color: "text.primary", gutterBottom: !0, children: "Error al cargar" }),
           /* @__PURE__ */ d(Z, { variant: "body2", color: "text.secondary", sx: { mb: 3 }, children: y }),
-          /* @__PURE__ */ d(ve, { variant: "secondary", onClick: P, children: "Cerrar Ventana" })
+          /* @__PURE__ */ d(we, { variant: "secondary", onClick: P, children: "Cerrar Ventana" })
         ] }) : /* @__PURE__ */ d(
           "iframe",
           {
@@ -7284,18 +7284,18 @@ const nc = ({ value: e }) => {
     return (async () => {
       try {
         y(!0);
-        let D = "";
+        let N = "";
         if (Q)
-          D = Q;
+          N = Q;
         else if (s)
-          D = await s();
+          N = await s();
         else if (r && c)
-          D = await c(r);
+          N = await c(r);
         else
           throw new Error("No se proporcionó una función de descarga o URL para la imagen.");
-        H && (E = D, m(D), v(null));
-      } catch (D) {
-        console.error("Error loading Image:", D), H && v("No se pudo cargar la imagen. Verifique su conexión o permisos.");
+        H && (E = N, m(N), v(null));
+      } catch (N) {
+        console.error("Error loading Image:", N), H && v("No se pudo cargar la imagen. Verifique su conexión o permisos.");
       } finally {
         H && y(!1);
       }
@@ -7337,7 +7337,7 @@ const nc = ({ value: e }) => {
           ] }),
           /* @__PURE__ */ p(z, { sx: { display: "flex", alignItems: "center", gap: 1 }, children: [
             /* @__PURE__ */ d(
-              ve,
+              we,
               {
                 variant: "primary",
                 size: "sm",
@@ -7375,7 +7375,7 @@ const nc = ({ value: e }) => {
           /* @__PURE__ */ d(Z, { variant: "body2", sx: { color: "white" }, children: "Cargando imagen..." })
         ] }) : f ? /* @__PURE__ */ p(z, { sx: { p: 4, textAlign: "center" }, children: [
           /* @__PURE__ */ d(Z, { variant: "body1", color: "error", gutterBottom: !0, children: f }),
-          /* @__PURE__ */ d(ve, { variant: "secondary", size: "sm", onClick: t, className: "mt-2", children: "Cerrar" })
+          /* @__PURE__ */ d(we, { variant: "secondary", size: "sm", onClick: t, className: "mt-2", children: "Cerrar" })
         ] }) : /* @__PURE__ */ d(
           "img",
           {
@@ -7581,8 +7581,8 @@ const nc = ({ value: e }) => {
 }) => {
   const [m, g] = oe(!1), [y, f] = oe(!1), v = at(null), O = at(null), Q = s !== void 0 ? s : a.filter((b) => !b.read).length, H = r != null && r.nombre && (r != null && r.apellido) ? `${r.nombre} ${r.apellido}` : (r == null ? void 0 : r.nombre) || (r == null ? void 0 : r.name) || (r == null ? void 0 : r.username) || (r == null ? void 0 : r.email) || "Unisimon Bolivar", E = (r == null ? void 0 : r.foto) || (r == null ? void 0 : r.avatarUrl) || "https://ui-avatars.com/api/?name=Unisimon+Bolivar&background=076930&color=fff&size=128";
   return Le(() => {
-    const b = (D) => {
-      const P = D.target;
+    const b = (N) => {
+      const P = N.target;
       v.current && !v.current.contains(P) && g(!1), O.current && !O.current.contains(P) && f(!1);
     };
     return document.addEventListener("mousedown", b), () => document.removeEventListener("mousedown", b);
@@ -7608,7 +7608,7 @@ const nc = ({ value: e }) => {
           }
         ),
         /* @__PURE__ */ d(qe, { children: y && /* @__PURE__ */ p(
-          ue.div,
+          ce.div,
           {
             initial: { opacity: 0, y: 10 },
             animate: { opacity: 1, y: 0 },
@@ -7690,7 +7690,7 @@ const nc = ({ value: e }) => {
           }
         ),
         /* @__PURE__ */ d(qe, { children: m && /* @__PURE__ */ p(
-          ue.div,
+          ce.div,
           {
             initial: { opacity: 0, y: 10 },
             animate: { opacity: 1, y: 0 },
@@ -7804,7 +7804,7 @@ const nc = ({ value: e }) => {
   onLogout: i,
   LinkComponent: a
 }) => {
-  var D;
+  var N;
   const [s, c] = oe(!1), [u, A] = oe(!1), [h, m] = oe([]), [g, y] = oe(""), [f, v] = oe(
     typeof window < "u" ? window.innerWidth : 1200
   );
@@ -7824,7 +7824,7 @@ const nc = ({ value: e }) => {
     (P) => P.label.toLowerCase().includes(g.toLowerCase()) || P.children && P.children.some(
       (k) => k.label.toLowerCase().includes(g.toLowerCase())
     )
-  ), b = a || (({ to: P, className: k, title: R, children: L }) => /* @__PURE__ */ d(
+  ), b = a || (({ to: P, className: k, title: R, children: Y }) => /* @__PURE__ */ d(
     "a",
     {
       href: P,
@@ -7833,12 +7833,12 @@ const nc = ({ value: e }) => {
       },
       className: k,
       title: R,
-      children: L
+      children: Y
     }
   ));
   return /* @__PURE__ */ p(De, { children: [
     /* @__PURE__ */ d(qe, { children: !O && u && /* @__PURE__ */ d(
-      ue.div,
+      ce.div,
       {
         initial: { opacity: 0 },
         animate: { opacity: 1 },
@@ -7852,11 +7852,11 @@ const nc = ({ value: e }) => {
       {
         onClick: () => A(!0),
         className: "fixed top-4 left-4 p-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 text-primary cursor-pointer",
-        children: /* @__PURE__ */ d(we.Menu, { size: 24 })
+        children: /* @__PURE__ */ d(Ce.Menu, { size: 24 })
       }
     ),
     /* @__PURE__ */ p(
-      ue.aside,
+      ce.aside,
       {
         initial: !1,
         animate: {
@@ -7887,7 +7887,7 @@ const nc = ({ value: e }) => {
               {
                 onClick: () => c(!0),
                 className: "p-1.5 text-gray-400 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors lg:block hidden cursor-pointer",
-                children: /* @__PURE__ */ d(we.ChevronLeft, { size: 20 })
+                children: /* @__PURE__ */ d(Ce.ChevronLeft, { size: 20 })
               }
             )
           ] }) }),
@@ -7897,12 +7897,12 @@ const nc = ({ value: e }) => {
               onClick: () => c(!1),
               className: "p-2 text-gray-400 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors cursor-pointer",
               title: "Expandir menú",
-              children: /* @__PURE__ */ d(we.ChevronRight, { size: 20 })
+              children: /* @__PURE__ */ d(Ce.ChevronRight, { size: 20 })
             }
           ) }),
           !s && /* @__PURE__ */ d("div", { className: "p-4", children: /* @__PURE__ */ p("div", { className: "relative group", children: [
             /* @__PURE__ */ d(
-              we.Search,
+              Ce.Search,
               {
                 size: 18,
                 className: "absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors"
@@ -7923,13 +7923,13 @@ const nc = ({ value: e }) => {
               {
                 onClick: () => y(""),
                 className: "absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary cursor-pointer",
-                children: /* @__PURE__ */ d(we.X, { size: 14 })
+                children: /* @__PURE__ */ d(Ce.X, { size: 14 })
               }
             )
           ] }) }),
           /* @__PURE__ */ d("nav", { className: "flex-1 overflow-y-auto overflow-x-hidden custom-scrollbar py-4 px-3 space-y-1", children: H.map((P) => {
             var l, I;
-            const k = !!P.children && P.children.length > 0, R = h.includes(P.label), L = t === P.path || k && ((l = P.children) == null ? void 0 : l.some((w) => t === w.path)), T = P.icon || we.Circle;
+            const k = !!P.children && P.children.length > 0, R = h.includes(P.label), Y = t === P.path || k && ((l = P.children) == null ? void 0 : l.some((w) => t === w.path)), T = P.icon || Ce.Circle;
             return /* @__PURE__ */ p("div", { className: "lg:mb-1", children: [
               k ? /* @__PURE__ */ p(
                 "button",
@@ -7938,7 +7938,7 @@ const nc = ({ value: e }) => {
                   className: `
                       w-full flex items-center group transition-all duration-200 rounded-lg p-3 cursor-pointer
                       ${s ? "justify-center" : "px-4 py-3"}
-                      ${L ? "bg-primary text-white shadow-md shadow-primary/20" : "text-gray-600 hover:bg-primary/5 hover:text-primary"}
+                      ${Y ? "bg-primary text-white shadow-md shadow-primary/20" : "text-gray-600 hover:bg-primary/5 hover:text-primary"}
                     `,
                   title: s ? P.label : "",
                   children: [
@@ -7946,11 +7946,11 @@ const nc = ({ value: e }) => {
                       T,
                       {
                         size: s ? 24 : 20,
-                        className: `${!s && "mr-3"} ${L ? "text-white" : "text-gray-400 group-hover:text-primary"} transition-colors`
+                        className: `${!s && "mr-3"} ${Y ? "text-white" : "text-gray-400 group-hover:text-primary"} transition-colors`
                       }
                     ),
                     !s && /* @__PURE__ */ d("span", { className: "font-medium whitespace-nowrap", children: P.label }),
-                    !s && /* @__PURE__ */ d("div", { className: "ml-auto flex items-center", children: R ? /* @__PURE__ */ d(we.ChevronUp, { size: 16 }) : /* @__PURE__ */ d(we.ChevronDown, { size: 16 }) })
+                    !s && /* @__PURE__ */ d("div", { className: "ml-auto flex items-center", children: R ? /* @__PURE__ */ d(Ce.ChevronUp, { size: 16 }) : /* @__PURE__ */ d(Ce.ChevronDown, { size: 16 }) })
                   ]
                 }
               ) : /* @__PURE__ */ p(
@@ -7960,7 +7960,7 @@ const nc = ({ value: e }) => {
                   className: `
                       flex items-center group transition-all duration-200 rounded-lg cursor-pointer
                       ${s ? "justify-center p-3" : "px-4 py-3"}
-                      ${L ? "bg-primary text-white shadow-md shadow-primary/20" : "text-gray-600 hover:bg-primary/5 hover:text-primary"}
+                      ${Y ? "bg-primary text-white shadow-md shadow-primary/20" : "text-gray-600 hover:bg-primary/5 hover:text-primary"}
                     `,
                   title: s ? P.label : "",
                   children: [
@@ -7968,42 +7968,57 @@ const nc = ({ value: e }) => {
                       T,
                       {
                         size: s ? 24 : 20,
-                        className: `${!s && "mr-3"} ${L ? "text-white" : "text-gray-400 group-hover:text-primary"} transition-colors`
+                        className: `${!s && "mr-3"} ${Y ? "text-white" : "text-gray-400 group-hover:text-primary"} transition-colors`
                       }
                     ),
-                    !s && /* @__PURE__ */ d("span", { className: "font-medium whitespace-nowrap", children: P.label })
+                    !s && /* @__PURE__ */ d("span", { className: "font-medium whitespace-nowrap", children: P.label }),
+                    !s && Y && /* @__PURE__ */ d(
+                      ce.div,
+                      {
+                        layoutId: "activeIndicator",
+                        className: "ml-auto w-1.5 h-1.5 rounded-3xl bg-white"
+                      }
+                    )
                   ]
                 }
               ),
               /* @__PURE__ */ d(qe, { children: k && R && !s && /* @__PURE__ */ d(
-                ue.div,
+                ce.div,
                 {
-                  initial: { opacity: 0, height: 0 },
-                  animate: { opacity: 1, height: "auto" },
-                  exit: { opacity: 0, height: 0 },
-                  transition: { duration: 0.2 },
-                  className: "ml-4 pl-4 border-l-2 border-gray-100 my-1 space-y-1",
+                  initial: { height: 0, opacity: 0 },
+                  animate: { height: "auto", opacity: 1 },
+                  exit: { height: 0, opacity: 0 },
+                  className: "overflow-hidden pl-10 space-y-1",
                   children: (I = P.children) == null ? void 0 : I.map((w) => {
-                    const N = t === w.path;
+                    const D = t === w.path;
                     return /* @__PURE__ */ p(
                       b,
                       {
                         to: w.path,
                         className: `
-                              flex items-center px-3 py-2 rounded-lg text-xs font-semibold transition-colors cursor-pointer
-                              ${N ? "text-primary bg-primary/10 font-bold" : "text-gray-500 hover:text-primary hover:bg-gray-50"}
+                              flex items-center py-2 px-3 rounded-lg text-sm transition-all duration-200 m-2 cursor-pointer
+                              ${D ? "bg-warning text-white shadow-sm shadow-primary/20 font-semibold" : "text-gray-500 hover:text-primary hover:bg-primary/5"}
                             `,
                         children: [
                           /* @__PURE__ */ d(
-                            "span",
+                            Ce.Circle,
                             {
-                              className: `w-1.5 h-1.5 rounded-full mr-2.5 ${N ? "bg-primary" : "bg-gray-300"}`
+                              size: 6,
+                              fill: D ? "white" : "none",
+                              className: `mr-3 ${D ? "text-white" : "text-gray-400"}`
                             }
                           ),
-                          w.label
+                          /* @__PURE__ */ d("span", { className: "truncate", children: w.label }),
+                          D && /* @__PURE__ */ d(
+                            ce.div,
+                            {
+                              layoutId: "activeSubIndicator",
+                              className: "ml-auto w-1.5 h-1.5 rounded-3xl bg-white"
+                            }
+                          )
                         ]
                       },
-                      w.path
+                      w.label || w.path
                     );
                   })
                 }
@@ -8012,7 +8027,7 @@ const nc = ({ value: e }) => {
           }) }),
           o && !s && /* @__PURE__ */ p("div", { className: "p-4 border-t border-gray-100 bg-gray-50/50 flex items-center justify-between", children: [
             /* @__PURE__ */ p("div", { className: "flex items-center space-x-2.5 overflow-hidden", children: [
-              /* @__PURE__ */ d("div", { className: "w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs shrink-0", children: ((D = o.username) == null ? void 0 : D.charAt(0).toUpperCase()) || "U" }),
+              /* @__PURE__ */ d("div", { className: "w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs shrink-0", children: ((N = o.username) == null ? void 0 : N.charAt(0).toUpperCase()) || "U" }),
               /* @__PURE__ */ d("p", { className: "text-xs font-bold text-gray-700 truncate", children: o.username })
             ] }),
             i && /* @__PURE__ */ d(
@@ -8021,7 +8036,7 @@ const nc = ({ value: e }) => {
                 onClick: i,
                 className: "text-gray-400 hover:text-red-500 p-1.5 rounded-lg hover:bg-white transition-colors cursor-pointer",
                 title: "Cerrar sesión",
-                children: /* @__PURE__ */ d(we.LogOut, { size: 16 })
+                children: /* @__PURE__ */ d(Ce.LogOut, { size: 16 })
               }
             )
           ] })
@@ -8037,7 +8052,7 @@ const nc = ({ value: e }) => {
   /* @__PURE__ */ p("div", { className: "relative w-24 h-24 mx-auto mb-6", children: [
     /* @__PURE__ */ d("div", { className: "absolute inset-0 border-4 border-gray-200 rounded-full" }),
     /* @__PURE__ */ d(
-      ue.div,
+      ce.div,
       {
         className: "absolute inset-0 border-4 border-primary border-t-transparent rounded-full",
         animate: { rotate: 360 },
@@ -8047,7 +8062,7 @@ const nc = ({ value: e }) => {
     /* @__PURE__ */ d("div", { className: "absolute inset-2 rounded-full overflow-hidden flex items-center justify-center bg-white", children: /* @__PURE__ */ d("img", { src: r, alt: "Cargando", className: "w-full h-full object-contain p-1" }) })
   ] }),
   /* @__PURE__ */ p(
-    ue.p,
+    ce.p,
     {
       className: "text-gray-600 font-medium text-lg",
       initial: { opacity: 0 },
@@ -8056,7 +8071,7 @@ const nc = ({ value: e }) => {
       children: [
         t,
         /* @__PURE__ */ d(
-          ue.span,
+          ce.span,
           {
             animate: { opacity: [0, 1, 0] },
             transition: { duration: 1.5, repeat: 1 / 0, ease: "easeInOut" },
@@ -8129,7 +8144,7 @@ const nc = ({ value: e }) => {
     /* @__PURE__ */ d("p", { className: "text-gray-500 text-lg md:text-xl max-w-lg mb-12 leading-relaxed font-medium px-4", children: t }),
     /* @__PURE__ */ p("div", { className: "flex flex-col sm:flex-row gap-5 items-center w-full justify-center px-4", children: [
       /* @__PURE__ */ d(
-        ve,
+        we,
         {
           variant: "ghost",
           size: "lg",
@@ -8142,7 +8157,7 @@ const nc = ({ value: e }) => {
         }
       ),
       /* @__PURE__ */ d(
-        ve,
+        we,
         {
           variant: "primary",
           size: "lg",
@@ -8191,7 +8206,7 @@ const nc = ({ value: e }) => {
     /* @__PURE__ */ d("p", { className: "text-gray-500 text-lg md:text-xl max-w-lg mb-12 leading-relaxed font-medium px-4", children: t }),
     /* @__PURE__ */ p("div", { className: "flex flex-col sm:flex-row gap-5 items-center w-full justify-center px-4", children: [
       /* @__PURE__ */ d(
-        ve,
+        we,
         {
           variant: "ghost",
           size: "lg",
@@ -8204,7 +8219,7 @@ const nc = ({ value: e }) => {
         }
       ),
       /* @__PURE__ */ d(
-        ve,
+        we,
         {
           variant: "primary",
           size: "lg",
@@ -8338,7 +8353,7 @@ const nc = ({ value: e }) => {
 };
 export {
   vc as Alert,
-  ve as Button,
+  we as Button,
   ei as Card,
   Ll as DataTable,
   ic as FileImgUpload,

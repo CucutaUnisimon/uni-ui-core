@@ -282,6 +282,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         {item.label}
                       </span>
                     )}
+                    {!isCollapsed && isActive && (
+                      <motion.div
+                        layoutId="activeIndicator"
+                        className="ml-auto w-1.5 h-1.5 rounded-3xl bg-white"
+                      />
+                    )}
                   </LinkElem>
                 )}
 
@@ -289,33 +295,40 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <AnimatePresence>
                   {hasChildren && isExpanded && !isCollapsed && (
                     <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="ml-4 pl-4 border-l-2 border-gray-100 my-1 space-y-1"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="overflow-hidden pl-10 space-y-1"
                     >
                       {item.children?.map((child) => {
                         const isChildActive = currentPath === child.path;
                         return (
                           <LinkElem
-                            key={child.path}
+                            key={child.label || child.path}
                             to={child.path}
                             className={`
-                              flex items-center px-3 py-2 rounded-lg text-xs font-semibold transition-colors cursor-pointer
+                              flex items-center py-2 px-3 rounded-lg text-sm transition-all duration-200 m-2 cursor-pointer
                               ${
                                 isChildActive
-                                  ? 'text-primary bg-primary/10 font-bold'
-                                  : 'text-gray-500 hover:text-primary hover:bg-gray-50'
+                                  ? 'bg-warning text-white shadow-sm shadow-primary/20 font-semibold'
+                                  : 'text-gray-500 hover:text-primary hover:bg-primary/5'
                               }
                             `}
                           >
-                            <span
-                              className={`w-1.5 h-1.5 rounded-full mr-2.5 ${
-                                isChildActive ? 'bg-primary' : 'bg-gray-300'
+                            <Icons.Circle
+                              size={6}
+                              fill={isChildActive ? 'white' : 'none'}
+                              className={`mr-3 ${
+                                isChildActive ? 'text-white' : 'text-gray-400'
                               }`}
                             />
-                            {child.label}
+                            <span className="truncate">{child.label}</span>
+                            {isChildActive && (
+                              <motion.div
+                                layoutId="activeSubIndicator"
+                                className="ml-auto w-1.5 h-1.5 rounded-3xl bg-white"
+                              />
+                            )}
                           </LinkElem>
                         );
                       })}
