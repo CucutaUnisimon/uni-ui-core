@@ -1,9 +1,10 @@
 import React from 'react';
-interface FormTagsProps {
+export interface FormTagsProps {
     label: string;
     placeholder?: string;
     tags: string[];
     onTagsChange: (tags: string[]) => void;
+    options?: string[];
     icon?: React.ReactNode;
     error?: boolean;
     helperText?: string;

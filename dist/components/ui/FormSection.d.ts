@@ -1,8 +1,9 @@
 import React from 'react';
-interface FormSectionProps {
-    title: string;
+export interface FormSectionProps {
+    title: string | React.ReactNode;
     subtitle?: string | React.ReactNode;
     icon?: React.ReactNode;
+    action?: React.ReactNode;
     children: React.ReactNode;
     className?: string;
     variant?: 'default' | 'gray' | 'white';

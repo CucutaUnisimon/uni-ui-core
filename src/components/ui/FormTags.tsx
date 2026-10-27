@@ -8,11 +8,12 @@ import {
 } from '@mui/material';
 import { X } from 'lucide-react';
 
-interface FormTagsProps {
+export interface FormTagsProps {
     label: string;
     placeholder?: string;
     tags: string[];
     onTagsChange: (tags: string[]) => void;
+    options?: string[];
     icon?: React.ReactNode;
     error?: boolean;
     helperText?: string;
@@ -28,6 +29,7 @@ const FormTags: React.FC<FormTagsProps> = ({
     placeholder = "Escriba y presione Enter...",
     tags,
     onTagsChange,
+    options = [],
     icon,
     error,
     helperText,
@@ -40,7 +42,7 @@ const FormTags: React.FC<FormTagsProps> = ({
             <Autocomplete
                 multiple
                 freeSolo
-                options={[]}
+                options={options}
                 value={tags}
                 onChange={(_event, newValue) => {
                     // Si se añade un nuevo valor (freeSolo)
@@ -99,6 +101,7 @@ const FormTags: React.FC<FormTagsProps> = ({
                                 minHeight: '56px',
                                 display: 'flex',
                                 flexWrap: 'wrap',
+                                backgroundColor: 'white',
                             }
                         }}
                     />

@@ -4904,55 +4904,56 @@ const ai = {
   placeholder: t = "Escriba y presione Enter...",
   tags: r,
   onTagsChange: n,
-  icon: o,
-  error: i,
-  helperText: a,
-  required: s,
-  validate: l
+  options: o = [],
+  icon: i,
+  error: a,
+  helperText: s,
+  required: l,
+  validate: c
 }) => /* @__PURE__ */ d(ee, { className: "flex flex-col gap-2 w-full", children: /* @__PURE__ */ d(
   Wn,
   {
     multiple: !0,
     freeSolo: !0,
-    options: [],
+    options: o,
     value: r,
-    onChange: (c, u) => {
-      const A = u[u.length - 1];
-      if (typeof A == "string") {
-        const m = A.trim().replace(/,/g, "");
-        if (m && !r.includes(m)) {
-          if (l && !l(m)) return;
-          n([...r, m]);
+    onChange: (u, A) => {
+      const m = A[A.length - 1];
+      if (typeof m == "string") {
+        const g = m.trim().replace(/,/g, "");
+        if (g && !r.includes(g)) {
+          if (c && !c(g)) return;
+          n([...r, g]);
         }
       } else
-        n(u);
+        n(A);
     },
-    renderTags: (c, u) => c.map((A, m) => /* @__PURE__ */ d(
+    renderTags: (u, A) => u.map((m, g) => /* @__PURE__ */ d(
       qi,
       {
         variant: "filled",
-        label: A,
+        label: m,
         size: "small",
-        ...u({ index: m }),
+        ...A({ index: g }),
         deleteIcon: /* @__PURE__ */ d($e, { size: 14 }),
         className: "bg-primary/10 text-primary font-bold border-0"
       }
     )),
-    renderInput: (c) => /* @__PURE__ */ d(
+    renderInput: (u) => /* @__PURE__ */ d(
       Yt,
       {
-        ...c,
+        ...u,
         label: e,
         placeholder: r.length === 0 ? t : "",
-        error: i,
-        helperText: a,
-        required: s,
+        error: a,
+        helperText: s,
+        required: l,
         fullWidth: !0,
         InputProps: {
-          ...c.InputProps,
+          ...u.InputProps,
           startAdornment: /* @__PURE__ */ C(Ue, { children: [
-            o && /* @__PURE__ */ d(_e, { position: "start", children: /* @__PURE__ */ d("span", { className: "text-gray-400", children: o }) }),
-            c.InputProps.startAdornment
+            i && /* @__PURE__ */ d(_e, { position: "start", children: /* @__PURE__ */ d("span", { className: "text-gray-400", children: i }) }),
+            u.InputProps.startAdornment
           ] })
         },
         sx: {
@@ -4963,7 +4964,8 @@ const ai = {
             "&.Mui-focused fieldset": { borderColor: "#3b82f6", borderWidth: "2px" },
             minHeight: "56px",
             display: "flex",
-            flexWrap: "wrap"
+            flexWrap: "wrap",
+            backgroundColor: "white"
           }
         }
       }
@@ -5029,22 +5031,26 @@ const ai = {
   title: e,
   subtitle: t,
   icon: r,
-  children: n,
-  className: o = "",
-  variant: i = "gray"
+  action: n,
+  children: o,
+  className: i = "",
+  variant: a = "gray"
 }) => /* @__PURE__ */ C(ee, { className: `${{
   default: "",
   gray: "p-4 bg-gray-50 rounded-2xl border border-gray-100",
   white: "p-4 bg-white rounded-2xl border border-gray-100 shadow-sm"
-}[i]} flex flex-col gap-4 ${o}`, children: [
-  /* @__PURE__ */ C("div", { className: "flex flex-col gap-1", children: [
-    /* @__PURE__ */ C(te, { variant: "subtitle1", className: "font-bold flex items-center gap-2 text-primary", children: [
-      r && /* @__PURE__ */ d("span", { className: "flex items-center", children: r }),
-      e
+}[a]} flex flex-col gap-4 ${i}`, children: [
+  /* @__PURE__ */ C("div", { className: "flex items-center justify-between gap-2", children: [
+    /* @__PURE__ */ C("div", { className: "flex flex-col gap-1", children: [
+      /* @__PURE__ */ C(te, { variant: "subtitle1", component: "div", className: "font-bold flex items-center gap-2 text-primary", children: [
+        r && /* @__PURE__ */ d("span", { className: "flex items-center", children: r }),
+        e
+      ] }),
+      t && /* @__PURE__ */ d(te, { variant: "caption", className: "text-gray-500", children: t })
     ] }),
-    t && /* @__PURE__ */ d(te, { variant: "caption", className: "text-gray-500", children: t })
+    n && /* @__PURE__ */ d("div", { className: "flex items-center gap-2 flex-shrink-0", children: n })
   ] }),
-  /* @__PURE__ */ d(ee, { className: "w-full", children: n })
+  /* @__PURE__ */ d(ee, { className: "w-full", children: o })
 ] }), Rc = [
   "AR",
   // Argentina
