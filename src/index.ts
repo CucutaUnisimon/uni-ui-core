@@ -69,6 +69,7 @@ export { Alert } from './utils/alerts';
 
 // ─── Activos Institucionales ─────────────────────────────────────────────────
 export { default as logoUnisimon } from './assets/logoUnisimon.png';
+export { default as logoUnisimonBlanco } from './assets/logo_original-blanco.png';
 export { default as loaderLogo } from './assets/loaderLogo.png';
 export { default as favicon } from './assets/favicon.ico';
 export { ODS_ICONS, getOdsIcon } from './assets/ods';
