@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-export type FormDateSize = 'xs' | 'sm' | 'md' | 'lg' | 'small' | 'medium' | 'large';
-interface FormDateProps {
+export interface FormDateProps {
     label?: ReactNode;
     value: string | null;
     onChange: (date: string) => void;
@@ -10,11 +9,10 @@ interface FormDateProps {
     disabled?: boolean;
     placeholder?: string;
     required?: boolean;
-    size?: FormDateSize;
 }
 /**
  * FormDate — Componente reutilizable para selección de fechas usando MUI DatePicker
- * Soporta múltiples tamaños: xs, sm, md, lg
+ * Proporciona una interfaz limpia y estándar que respeta el tema general
  */
 export declare const FormDate: React.FC<FormDateProps>;
 export default FormDate;
