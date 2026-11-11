@@ -9,7 +9,7 @@ export interface ButtonProps extends HTMLMotionProps<'button'> {
   fullWidth?: boolean;
   loading?: boolean;
   disabled?: boolean;
-  icon?: LucideIcon;
+  icon?: LucideIcon | ReactNode;
   iconPosition?: 'left' | 'right';
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   type?: 'button' | 'submit' | 'reset';
@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   fullWidth = false,
   loading = false,
   disabled = false,
-  icon: Icon,
+  icon,
   iconPosition = 'left',
   onClick,
   type = 'button',
@@ -71,6 +71,21 @@ const Button: React.FC<ButtonProps> = ({
 
   const isDisabled = disabled || loading;
 
+  const renderIcon = () => {
+    if (!icon) return null;
+    // Si ya es un elemento JSX (ej: <Send size={16} />)
+    if (React.isValidElement(icon)) {
+      return (
+        <span className={iconPosition === 'left' ? 'mr-2 flex items-center' : 'ml-2 flex items-center'}>
+          {icon}
+        </span>
+      );
+    }
+    // Si es un componente/función (ej: icon={Send})
+    const IconComponent = icon as LucideIcon;
+    return <IconComponent className={iconPosition === 'left' ? 'mr-2 h-4 w-4' : 'ml-2 h-4 w-4'} />;
+  };
+
   return (
     <motion.button
       type={type}
@@ -83,15 +98,11 @@ const Button: React.FC<ButtonProps> = ({
     >
       {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
 
-      {!loading && Icon && iconPosition === 'left' && (
-        <Icon className="mr-2 h-4 w-4" />
-      )}
+      {!loading && iconPosition === 'left' && renderIcon()}
 
       {children}
 
-      {!loading && Icon && iconPosition === 'right' && (
-        <Icon className="ml-2 h-4 w-4" />
-      )}
+      {!loading && iconPosition === 'right' && renderIcon()}
     </motion.button>
   );
 };

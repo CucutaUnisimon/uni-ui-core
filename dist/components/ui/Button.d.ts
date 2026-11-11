@@ -8,7 +8,7 @@ export interface ButtonProps extends HTMLMotionProps<'button'> {
     fullWidth?: boolean;
     loading?: boolean;
     disabled?: boolean;
-    icon?: LucideIcon;
+    icon?: LucideIcon | ReactNode;
     iconPosition?: 'left' | 'right';
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     type?: 'button' | 'submit' | 'reset';
