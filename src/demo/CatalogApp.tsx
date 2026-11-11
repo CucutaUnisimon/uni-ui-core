@@ -24,7 +24,7 @@ import {
   logoUnisimon,
   logoUnisimonBlanco,
   ODS_ICONS,
-} from '../../index';
+} from '../index';
 import { ComponentShowcase } from './components/ComponentShowcase';
 import {
   Layers,
@@ -800,3 +800,4 @@ Alert.confirm({
     </div>
   );
 };
+
